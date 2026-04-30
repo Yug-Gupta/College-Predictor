@@ -1,0 +1,10 @@
+import { readFileSync } from 'fs';
+const d = JSON.parse(readFileSync('src/data/official/cutoffs-2025.json', 'utf-8'));
+console.log('Total records:', d.length);
+console.log('\nFirst 3 records:');
+d.slice(0, 3).forEach(r => console.log(JSON.stringify(r, null, 2)));
+console.log('\n--- HBTU CSE OPEN HS ---');
+const hbtu = d.filter(r => r.collegeName.includes('HARCOURT') && r.branchCode === 'CSE' && r.category === 'OPEN' && r.quota === 'Home State');
+hbtu.forEach(r => console.log(`Round ${r.round}: OR=${r.openingRank} CR=${r.closingRank}`));
+console.log('\n--- All unique branchCodes ---');
+console.log([...new Set(d.map(r => r.branchCode))].sort().join(', '));
