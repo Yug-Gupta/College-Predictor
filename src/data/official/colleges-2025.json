@@ -1,0 +1,3312 @@
+[
+  {
+    "id": "greater-noida-institute-of-technologygautam-buddh-nagar",
+    "name": "GREATER NOIDA INSTITUTE OF TECHNOLOGY,GAUTAM BUDDH NAGAR",
+    "shortName": "GREATER NOIDA INSTITUTE OF TECHNOLOGY",
+    "city": "Gautam Buddh Nagar",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE-AI",
+      "CSE",
+      "IT",
+      "ECE",
+      "EE",
+      "CE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "bharat-ratna-sardar-vallabhbhai-patel-rajkiya-engineering-college-basti",
+    "name": "BHARAT RATNA SARDAR VALLABHBHAI PATEL RAJKIYA ENGINEERING COLLEGE, BASTI",
+    "shortName": "BHARAT RATNA SARDAR VALLABHBHAI PATEL RA",
+    "city": "Basti",
+    "region": "Eastern UP",
+    "type": "Government",
+    "branches": [
+      "CE",
+      "CSE",
+      "EEF",
+      "EEE",
+      "EE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "dr-rammanohar-lohia-avadh-university-faizabad",
+    "name": "Dr. Rammanohar Lohia Avadh University, Faizabad",
+    "shortName": "Dr. Rammanohar Lohia Avadh University",
+    "city": "Faizabad",
+    "region": "Eastern UP",
+    "type": "Government",
+    "branches": [
+      "ECE",
+      "EE",
+      "CS",
+      "CE",
+      "IT",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "bundelkhand-institute-of-engineering-technologyjhansi",
+    "name": "BUNDELKHAND INSTITUTE OF ENGINEERING & TECHNOLOGY,JHANSI",
+    "shortName": "BUNDELKHAND INSTITUTE OF ENGINEERING & T",
+    "city": "Jhansi",
+    "region": "Bundelkhand",
+    "type": "Government",
+    "branches": [
+      "EE",
+      "ME",
+      "CE",
+      "IT",
+      "ECE",
+      "AIML",
+      "CHE",
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "kiet-group-of-institutionskrishna-instt-of-engg-technologyghaziabad",
+    "name": "KIET GROUP OF INSTITUTIONS(KRISHNA INSTT. OF ENGG. & TECHNOLOGY),GHAZIABAD",
+    "shortName": "KIET GROUP OF INSTITUTIONS(KRISHNA INSTT",
+    "city": "Ghaziabad",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE-AI",
+      "CSE",
+      "EACE",
+      "ME",
+      "ECE",
+      "CS",
+      "IT",
+      "EEE",
+      "AMAIA",
+      "EACEF"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "gl-bajaj-institute-of-technology-managementgautam-buddh-nagar",
+    "name": "G.L. BAJAJ INSTITUTE OF TECHNOLOGY & MANAGEMENT,GAUTAM BUDDH NAGAR",
+    "shortName": "G.L. BAJAJ INSTITUTE OF TECHNOLOGY & MAN",
+    "city": "Gautam Buddh Nagar",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CS",
+      "CSE",
+      "ME",
+      "CSE-AI",
+      "ECE",
+      "EEE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "rajkiya-engineering-collegebijnor",
+    "name": "RAJKIYA ENGINEERING COLLEGE,BIJNOR",
+    "shortName": "RAJKIYA ENGINEERING COLLEGE,BIJNOR",
+    "city": "Bijnor",
+    "region": "Western UP",
+    "type": "Government",
+    "branches": [
+      "CE",
+      "IT",
+      "EE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "kamla-nehru-institute-of-physical-social-sciencessultanpur",
+    "name": "KAMLA NEHRU INSTITUTE OF PHYSICAL & SOCIAL SCIENCES,SULTANPUR",
+    "shortName": "KAMLA NEHRU INSTITUTE OF PHYSICAL & SOCI",
+    "city": "Sultanpur",
+    "region": "Eastern UP",
+    "type": "Private",
+    "branches": [
+      "CE",
+      "CSE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "lucknow-university-lucknow",
+    "name": "Lucknow University, Lucknow",
+    "shortName": "Lucknow University, Lucknow",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Government",
+    "branches": [
+      "CE",
+      "EE",
+      "CSE",
+      "ME",
+      "ECE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "vishveshwarya-group-of-institutionsgautam-buddh-nagar",
+    "name": "VISHVESHWARYA GROUP OF INSTITUTIONS,GAUTAM BUDDH NAGAR",
+    "shortName": "VISHVESHWARYA GROUP OF INSTITUTIONS",
+    "city": "Gautam Buddh Nagar",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "CE",
+      "EE",
+      "ME",
+      "ECE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "khwaja-moinuddin-chishti-language-university-lucknow",
+    "name": "Khwaja Moinuddin Chishti Language University, Lucknow",
+    "shortName": "Khwaja Moinuddin Chishti Language Univer",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Government",
+    "branches": [
+      "CSE",
+      "CE",
+      "AR",
+      "ME",
+      "BIOTECH"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "ims-engineering-collegeghaziabad",
+    "name": "I.M.S. ENGINEERING COLLEGE,GHAZIABAD",
+    "shortName": "I.M.S. ENGINEERING COLLEGE,GHAZIABAD",
+    "city": "Ghaziabad",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ECE",
+      "CS",
+      "IT",
+      "BIOTECH"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "drambedkar-institute-of-technology-for-divyangjan-up-kanpur",
+    "name": "DR.AMBEDKAR INSTITUTE OF TECHNOLOGY FOR DIVYANGJAN, U.P., KANPUR",
+    "shortName": "DR.AMBEDKAR INSTITUTE OF TECHNOLOGY FOR ",
+    "city": "Kanpur",
+    "region": "Central UP",
+    "type": "Government",
+    "branches": [
+      "CSE",
+      "BIOTECH",
+      "EEE",
+      "EEF",
+      "IT",
+      "CHE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "rajkiya-engineering-collegeambedkar-nagar",
+    "name": "RAJKIYA ENGINEERING COLLEGE,AMBEDKAR NAGAR",
+    "shortName": "RAJKIYA ENGINEERING COLLEGE",
+    "city": "Ambedkar Nagar",
+    "region": "Eastern UP",
+    "type": "Government",
+    "branches": [
+      "CE",
+      "EE",
+      "IT"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "maharaja-suhel-dev-state-university-azamgarh",
+    "name": "Maharaja Suhel Dev State University Azamgarh.",
+    "shortName": "Maharaja Suhel Dev State University Azam",
+    "city": "",
+    "region": "Other",
+    "type": "Government",
+    "branches": [
+      "CS",
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "babu-banarasi-das-institute-of-technology-and-management-lucknow",
+    "name": "BABU BANARASI DAS INSTITUTE OF TECHNOLOGY AND MANAGEMENT, LUCKNOW",
+    "shortName": "BABU BANARASI DAS INSTITUTE OF TECHNOLOG",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "ECE",
+      "CSE",
+      "EE",
+      "ME",
+      "CE",
+      "IT"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "bundelkhand-university-jhansi",
+    "name": "Bundelkhand University, Jhansi",
+    "shortName": "Bundelkhand University, Jhansi",
+    "city": "Jhansi",
+    "region": "Bundelkhand",
+    "type": "Government",
+    "branches": [
+      "ME",
+      "BIOTECH",
+      "BME",
+      "FET",
+      "ECE",
+      "EI",
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "institute-of-engineering-technologylucknow",
+    "name": "INSTITUTE OF ENGINEERING & TECHNOLOGY,LUCKNOW",
+    "shortName": "INSTITUTE OF ENGINEERING & TECHNOLOGY",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "EE",
+      "CSE",
+      "CSE-AI",
+      "ECE",
+      "ME",
+      "CE",
+      "CHE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "bansal-institute-of-engineering-technologylucknow",
+    "name": "BANSAL INSTITUTE OF ENGINEERING & TECHNOLOGY,LUCKNOW",
+    "shortName": "BANSAL INSTITUTE OF ENGINEERING & TECHNO",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "CE",
+      "BIOTECH",
+      "IT",
+      "ECE",
+      "CSE-AI",
+      "EE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "ajay-kumar-garg-engg-collegeghaziabad",
+    "name": "AJAY KUMAR GARG ENGG. COLLEGE,GHAZIABAD",
+    "shortName": "AJAY KUMAR GARG ENGG. COLLEGE,GHAZIABAD",
+    "city": "Ghaziabad",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "IT",
+      "CS",
+      "ME",
+      "CE",
+      "AIML",
+      "EEE",
+      "ECE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "noida-institute-of-engg-technologygautam-buddh-nagar",
+    "name": "NOIDA INSTITUTE OF ENGG. & TECHNOLOGY,GAUTAM BUDDH NAGAR",
+    "shortName": "NOIDA INSTITUTE OF ENGG. & TECHNOLOGY",
+    "city": "Gautam Buddh Nagar",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSBS",
+      "CS",
+      "CSE",
+      "EEVDAT",
+      "CSE-AI",
+      "ME",
+      "ECE",
+      "IT",
+      "MAC",
+      "BIOTECH",
+      "MACF"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "institute-of-technology-managementaligarh",
+    "name": "INSTITUTE OF TECHNOLOGY & MANAGEMENT,ALIGARH",
+    "shortName": "INSTITUTE OF TECHNOLOGY & MANAGEMENT",
+    "city": "Aligarh",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "EE",
+      "ME",
+      "IT",
+      "ECE",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "galgotias-college-of-engg-technologygautam-buddh-nagar",
+    "name": "GALGOTIA'S COLLEGE OF ENGG. & TECHNOLOGY,GAUTAM BUDDH NAGAR",
+    "shortName": "GALGOTIA'S COLLEGE OF ENGG. & TECHNOLOGY",
+    "city": "Gautam Buddh Nagar",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "EACACT",
+      "CSE",
+      "EEVDAT",
+      "EE",
+      "CSE-AI",
+      "IT",
+      "EEE",
+      "CS",
+      "CE",
+      "ME",
+      "ECE",
+      "AIML"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "raj-kumar-goel-instt-of-technologyghaziabad",
+    "name": "RAJ KUMAR GOEL INSTT. OF TECHNOLOGY,GHAZIABAD",
+    "shortName": "RAJ KUMAR GOEL INSTT. OF TECHNOLOGY",
+    "city": "Ghaziabad",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "CS",
+      "CE",
+      "EEE",
+      "IT",
+      "ECE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "dr-shakuntala-misra-national-rehabilitation-university-lucknow",
+    "name": "Dr. Shakuntala Misra National Rehabilitation University, Lucknow",
+    "shortName": "Dr. Shakuntala Misra National Rehabilita",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Government",
+    "branches": [
+      "ME",
+      "CSE",
+      "CE",
+      "EE",
+      "ECE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "institute-of-engg-rural-technologyallahabad",
+    "name": "INSTITUTE OF ENGG. & RURAL TECHNOLOGY,ALLAHABAD",
+    "shortName": "INSTITUTE OF ENGG. & RURAL TECHNOLOGY",
+    "city": "Allahabad",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ME",
+      "EE",
+      "EEE",
+      "PROD",
+      "CE",
+      "ICE",
+      "EEF"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "rajkiya-engineering-collegebanda",
+    "name": "RAJKIYA ENGINEERING COLLEGE,BANDA",
+    "shortName": "RAJKIYA ENGINEERING COLLEGE,BANDA",
+    "city": "Banda",
+    "region": "Bundelkhand",
+    "type": "Government",
+    "branches": [
+      "IT",
+      "ME",
+      "EE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "rajkiya-engineering-collegesonebhadra",
+    "name": "RAJKIYA ENGINEERING COLLEGE,SONEBHADRA",
+    "shortName": "RAJKIYA ENGINEERING COLLEGE,SONEBHADRA",
+    "city": "Sonebhadra",
+    "region": "Other",
+    "type": "Government",
+    "branches": [
+      "EE",
+      "CSE",
+      "EEE",
+      "EEF",
+      "MN"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "centre-for-advance-studieslucknow",
+    "name": "CENTRE FOR ADVANCE STUDIES,LUCKNOW",
+    "shortName": "CENTRE FOR ADVANCE STUDIES,LUCKNOW",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "MAMEM",
+      "EEVDAT"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "its-enggcollegegautam-buddh-nagar",
+    "name": "I.T.S. ENGG.COLLEGE,GAUTAM BUDDH NAGAR",
+    "shortName": "I.T.S. ENGG.COLLEGE,GAUTAM BUDDH NAGAR",
+    "city": "Gautam Buddh Nagar",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ECE",
+      "ME",
+      "EACE",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "babu-sunder-singh-institute-of-technology-managementlucknow",
+    "name": "BABU SUNDER SINGH INSTITUTE OF TECHNOLOGY & MANAGEMENT,LUCKNOW",
+    "shortName": "BABU SUNDER SINGH INSTITUTE OF TECHNOLOG",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "AIML",
+      "AE",
+      "IT",
+      "CSE",
+      "AG",
+      "ECE",
+      "CE",
+      "ME",
+      "EE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "shri-ram-swaroop-memorial-college-of-engg-managementlucknow",
+    "name": "SHRI RAM SWAROOP MEMORIAL COLLEGE OF ENGG. & MANAGEMENT,LUCKNOW",
+    "shortName": "SHRI RAM SWAROOP MEMORIAL COLLEGE OF ENG",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "IT",
+      "ECE",
+      "ME",
+      "EE",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "rrinstitute-of-modern-technologylucknow",
+    "name": "R.R.INSTITUTE OF MODERN TECHNOLOGY,LUCKNOW",
+    "shortName": "R.R.INSTITUTE OF MODERN TECHNOLOGY",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSD",
+      "CSE",
+      "IT",
+      "CE",
+      "ME",
+      "EE",
+      "ECE",
+      "CS",
+      "BIOTECH"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "pranveer-singh-institute-of-technologykanpur",
+    "name": "PRANVEER SINGH INSTITUTE OF TECHNOLOGY,KANPUR",
+    "shortName": "PRANVEER SINGH INSTITUTE OF TECHNOLOGY",
+    "city": "Kanpur",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "IT",
+      "ECE",
+      "CSE-AI"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "lucknow-institute-of-technologylucknow",
+    "name": "LUCKNOW INSTITUTE OF TECHNOLOGY,LUCKNOW",
+    "shortName": "LUCKNOW INSTITUTE OF TECHNOLOGY,LUCKNOW",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "IT",
+      "EE",
+      "CSE",
+      "ECE",
+      "CE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "madhu-vachaspati-institute-of-engineering-technologykaushambi",
+    "name": "MADHU VACHASPATI INSTITUTE OF ENGINEERING & TECHNOLOGY,KAUSHAMBI",
+    "shortName": "MADHU VACHASPATI INSTITUTE OF ENGINEERIN",
+    "city": "Kaushambi",
+    "region": "Other",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ME",
+      "CE",
+      "AIML",
+      "ECE",
+      "EE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "meerut-institute-of-engineering-technologymeerut",
+    "name": "MEERUT INSTITUTE OF ENGINEERING & TECHNOLOGY,MEERUT",
+    "shortName": "MEERUT INSTITUTE OF ENGINEERING & TECHNO",
+    "city": "Meerut",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "IT",
+      "ECE",
+      "CSE",
+      "CS",
+      "CSE-AI",
+      "BIOTECH",
+      "ME",
+      "CE",
+      "EE",
+      "CHE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "bharat-ratna-baba-saheb-bhim-rao-ambedkar-rajkiya-engineering-college-pratapgarh",
+    "name": "BHARAT RATNA BABA SAHEB BHIM RAO AMBEDKAR  RAJKIYA ENGINEERING COLLEGE, PRATAPGARH",
+    "shortName": "BHARAT RATNA BABA SAHEB BHIM RAO AMBEDKA",
+    "city": "Pratapgarh",
+    "region": "Eastern UP",
+    "type": "Government",
+    "branches": [
+      "EE",
+      "CSE",
+      "CE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "abes-enggcollegeghaziabad",
+    "name": "ABES ENGG.COLLEGE,GHAZIABAD",
+    "shortName": "ABES ENGG.COLLEGE,GHAZIABAD",
+    "city": "Ghaziabad",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ECE",
+      "EACE",
+      "EACEF",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "moradabad-institute-of-technologymoradabad",
+    "name": "MORADABAD INSTITUTE OF TECHNOLOGY,MORADABAD",
+    "shortName": "MORADABAD INSTITUTE OF TECHNOLOGY",
+    "city": "Moradabad",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ME",
+      "EE",
+      "ECE",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "jahangirabad-educational-trusts-group-of-institutions-faculty-of-engineeringbara",
+    "name": "JAHANGIRABAD EDUCATIONAL TRUST'S GROUP OF INSTITUTIONS, FACULTY OF ENGINEERING,BARABANKI",
+    "shortName": "JAHANGIRABAD EDUCATIONAL TRUST'S GROUP O",
+    "city": "Barabanki",
+    "region": "Eastern UP",
+    "type": "Private",
+    "branches": [
+      "AIML",
+      "CSE",
+      "EE",
+      "ME",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "kamla-nehru-institute-of-technologysultanpur",
+    "name": "KAMLA NEHRU INSTITUTE OF TECHNOLOGY,SULTANPUR",
+    "shortName": "KAMLA NEHRU INSTITUTE OF TECHNOLOGY",
+    "city": "Sultanpur",
+    "region": "Eastern UP",
+    "type": "Government",
+    "branches": [
+      "CSE",
+      "EE",
+      "IT",
+      "EEE",
+      "CE",
+      "EEF",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "maa-pateshwari-devi-rajkiya-engineering-college-gonda",
+    "name": "MAA PATESHWARI DEVI RAJKIYA  ENGINEERING COLLEGE, GONDA",
+    "shortName": "MAA PATESHWARI DEVI RAJKIYA  ENGINEERING",
+    "city": "Gonda",
+    "region": "Other",
+    "type": "Government",
+    "branches": [
+      "ME",
+      "EE",
+      "CSE",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "modern-college-jhansi",
+    "name": "MODERN COLLEGE, JHANSI",
+    "shortName": "MODERN COLLEGE, JHANSI",
+    "city": "Jhansi",
+    "region": "Bundelkhand",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "AIML"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "s-r-group-of-institutions-college-of-science-and-engineeringjhansi",
+    "name": "S R GROUP OF INSTITUTIONS (COLLEGE OF SCIENCE AND ENGINEERING),JHANSI",
+    "shortName": "S R GROUP OF INSTITUTIONS (COLLEGE OF SC",
+    "city": "Jhansi",
+    "region": "Bundelkhand",
+    "type": "Private",
+    "branches": [
+      "CS",
+      "CE",
+      "ME",
+      "AIML",
+      "CSE",
+      "EE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "ch-charan-singh-university-campus-scriet-meerut",
+    "name": "Ch. Charan Singh University Campus (SCRIET) Meerut",
+    "shortName": "Ch. Charan Singh University Campus (SCRI",
+    "city": "",
+    "region": "Other",
+    "type": "Government",
+    "branches": [
+      "CHE",
+      "ME",
+      "ECE",
+      "AE",
+      "CS",
+      "IT",
+      "EI"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "ashoka-institute-of-technology-managementvaranasi",
+    "name": "ASHOKA INSTITUTE OF TECHNOLOGY & MANAGEMENT,VARANASI",
+    "shortName": "ASHOKA INSTITUTE OF TECHNOLOGY & MANAGEM",
+    "city": "Varanasi",
+    "region": "Eastern UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ECE",
+      "EE",
+      "CE",
+      "ME",
+      "BIOTECH"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "amani-group-of-institutionsamroha",
+    "name": "AMANI GROUP OF INSTITUTIONS,AMROHA",
+    "shortName": "AMANI GROUP OF INSTITUTIONS,AMROHA",
+    "city": "Amroha",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "hindustan-college-of-science-technologymathura",
+    "name": "HINDUSTAN COLLEGE OF SCIENCE & TECHNOLOGY,MATHURA",
+    "shortName": "HINDUSTAN COLLEGE OF SCIENCE & TECHNOLOG",
+    "city": "Mathura",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "IT",
+      "ECE",
+      "EEE",
+      "ME",
+      "BIOTECH"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "kcc-institute-of-technology-managementgautam-buddh-nagar",
+    "name": "KCC INSTITUTE OF TECHNOLOGY & MANAGEMENT,GAUTAM BUDDH NAGAR",
+    "shortName": "KCC INSTITUTE OF TECHNOLOGY & MANAGEMENT",
+    "city": "Gautam Buddh Nagar",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "AIML",
+      "CSE",
+      "CSE-AI",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "samrat-ashok-rajkiya-engineering-college-mirzapur",
+    "name": "SAMRAT ASHOK RAJKIYA ENGINEERING COLLEGE, MIRZAPUR",
+    "shortName": "SAMRAT ASHOK RAJKIYA ENGINEERING COLLEGE",
+    "city": "Mirzapur",
+    "region": "Eastern UP",
+    "type": "Government",
+    "branches": [
+      "IT",
+      "CSE",
+      "EE",
+      "EEE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "hi-tech-institute-of-engineering-technologyghaziabad",
+    "name": "HI-TECH. INSTITUTE OF ENGINEERING &TECHNOLOGY,GHAZIABAD",
+    "shortName": "HI-TECH. INSTITUTE OF ENGINEERING &TECHN",
+    "city": "Ghaziabad",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ME",
+      "EE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "drmcsaxena-college-of-engg-technologylucknow",
+    "name": "DR.M.C.SAXENA COLLEGE OF ENGG. & TECHNOLOGY,LUCKNOW",
+    "shortName": "DR.M.C.SAXENA COLLEGE OF ENGG. & TECHNOL",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Government",
+    "branches": [
+      "CSE",
+      "BIOTECH",
+      "ME",
+      "IT",
+      "ECE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "iimt-engg-collegemeerut",
+    "name": "I.I.M.T. ENGG. COLLEGE,MEERUT",
+    "shortName": "I.I.M.T. ENGG. COLLEGE,MEERUT",
+    "city": "Meerut",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "AIAADS",
+      "CSE-AI",
+      "ECE",
+      "EEE",
+      "ME",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "inderprastha-engg-collegeghaziabad",
+    "name": "INDERPRASTHA ENGG. COLLEGE,GHAZIABAD",
+    "shortName": "INDERPRASTHA ENGG. COLLEGE,GHAZIABAD",
+    "city": "Ghaziabad",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ECE",
+      "IT",
+      "ME",
+      "CSE-AI"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "dr-bhim-rao-ambedkar-university-agra",
+    "name": "Dr. Bhim Rao Ambedkar University, Agra",
+    "shortName": "Dr. Bhim Rao Ambedkar University, Agra",
+    "city": "Agra",
+    "region": "Western UP",
+    "type": "Government",
+    "branches": [
+      "ME",
+      "EE",
+      "CE",
+      "CSE",
+      "ECE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "maharana-pratap-engineering-collegekanpur",
+    "name": "MAHARANA PRATAP ENGINEERING COLLEGE,KANPUR",
+    "shortName": "MAHARANA PRATAP ENGINEERING COLLEGE",
+    "city": "Kanpur",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CE",
+      "CSE",
+      "CS",
+      "CSE-AI",
+      "EE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "nitra-technical-campusghaziabad",
+    "name": "NITRA TECHNICAL CAMPUS,GHAZIABAD",
+    "shortName": "NITRA TECHNICAL CAMPUS,GHAZIABAD",
+    "city": "Ghaziabad",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "TT"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "m-j-p-ruhelkhand-university-bareilly",
+    "name": "M. J. P. Ruhelkhand University, Bareilly",
+    "shortName": "M. J. P. Ruhelkhand University, Bareilly",
+    "city": "Bareilly",
+    "region": "Western UP",
+    "type": "Government",
+    "branches": [
+      "ECE",
+      "EE",
+      "EEE",
+      "ME",
+      "CHE",
+      "CSIT"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "d-d-u-gorakhpur-university-gorakhpur",
+    "name": "D. D. U. Gorakhpur University, Gorakhpur",
+    "shortName": "D. D. U. Gorakhpur University, Gorakhpur",
+    "city": "Gorakhpur",
+    "region": "Eastern UP",
+    "type": "Government",
+    "branches": [
+      "IT",
+      "CSE",
+      "ME",
+      "ECE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "united-college-of-engineering-researchallahabad",
+    "name": "UNITED COLLEGE OF ENGINEERING & RESEARCH,ALLAHABAD",
+    "shortName": "UNITED COLLEGE OF ENGINEERING & RESEARCH",
+    "city": "Allahabad",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CE",
+      "ECE",
+      "EE",
+      "CSE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "ambalika-institute-of-management-technologylucknow",
+    "name": "AMBALIKA INSTITUTE OF MANAGEMENT & TECHNOLOGY,LUCKNOW",
+    "shortName": "AMBALIKA INSTITUTE OF MANAGEMENT & TECHN",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "IT",
+      "ME",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "uttar-pradesh-textile-technology-institutekanpur",
+    "name": "UTTAR PRADESH TEXTILE TECHNOLOGY INSTITUTE,KANPUR",
+    "shortName": "UTTAR PRADESH TEXTILE TECHNOLOGY INSTITU",
+    "city": "Kanpur",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "TT",
+      "TE",
+      "CSE",
+      "TC",
+      "MMFT",
+      "TTF"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "deewan-vs-institute-of-engineering-technology-meerutmeerut",
+    "name": "DEEWAN V.S. INSTITUTE OF ENGINEERING & TECHNOLOGY, MEERUT,MEERUT",
+    "shortName": "DEEWAN V.S. INSTITUTE OF ENGINEERING & T",
+    "city": "Meerut",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ECE",
+      "AIAADS",
+      "AIML",
+      "CE",
+      "EE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "buddha-institute-of-technologygorakhpur",
+    "name": "BUDDHA INSTITUTE OF TECHNOLOGY,GORAKHPUR",
+    "shortName": "BUDDHA INSTITUTE OF TECHNOLOGY,GORAKHPUR",
+    "city": "Gorakhpur",
+    "region": "Eastern UP",
+    "type": "Private",
+    "branches": [
+      "IT",
+      "ECE",
+      "CE",
+      "CS",
+      "CSE",
+      "ME",
+      "EEVDAT"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "sdcollege-of-engineering-technologymuzaffarnagar",
+    "name": "S.D.COLLEGE OF ENGINEERING & TECHNOLOGY,MUZAFFARNAGAR",
+    "shortName": "S.D.COLLEGE OF ENGINEERING & TECHNOLOGY",
+    "city": "Muzaffarnagar",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "CSE-AI",
+      "CE",
+      "EE",
+      "IT",
+      "ME",
+      "ECE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "jpinstitute-of-engineering-technologymeerut",
+    "name": "J.P..INSTITUTE OF ENGINEERING & TECHNOLOGY,MEERUT",
+    "shortName": "J.P..INSTITUTE OF ENGINEERING & TECHNOLO",
+    "city": "Meerut",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ECE",
+      "CE",
+      "IT"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "mg-institute-of-management-technologylucknow",
+    "name": "MG INSTITUTE OF MANAGEMENT & TECHNOLOGY,LUCKNOW",
+    "shortName": "MG INSTITUTE OF MANAGEMENT & TECHNOLOGY",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ME",
+      "EE",
+      "BIOTECH",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "isabella-thoburn-college-professional-studieslucknow",
+    "name": "ISABELLA THOBURN COLLEGE (PROFESSIONAL STUDIES),LUCKNOW",
+    "shortName": "ISABELLA THOBURN COLLEGE (PROFESSIONAL S",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CS",
+      "AIAADS",
+      "B"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "jms-group-of-institutionsghaziabad",
+    "name": "JMS GROUP OF INSTITUTIONS,GHAZIABAD",
+    "shortName": "JMS GROUP OF INSTITUTIONS,GHAZIABAD",
+    "city": "Ghaziabad",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "CE",
+      "ECE",
+      "EEE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "raja-balwant-singh-engineering-technical-campusagra",
+    "name": "RAJA BALWANT SINGH ENGINEERING TECHNICAL CAMPUS,AGRA",
+    "shortName": "RAJA BALWANT SINGH ENGINEERING TECHNICAL",
+    "city": "Agra",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "ECE",
+      "CSE",
+      "FT",
+      "ME",
+      "EE",
+      "CE",
+      "CHE",
+      "BIOTECH"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "vision-institute-of-technologykanpur",
+    "name": "VISION INSTITUTE OF TECHNOLOGY,KANPUR",
+    "shortName": "VISION INSTITUTE OF TECHNOLOGY,KANPUR",
+    "city": "Kanpur",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ME",
+      "CE",
+      "AE",
+      "EEE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "abes-institute-of-technologyghaziabad",
+    "name": "ABES INSTITUTE OF TECHNOLOGY,GHAZIABAD",
+    "shortName": "ABES INSTITUTE OF TECHNOLOGY,GHAZIABAD",
+    "city": "Ghaziabad",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE-AI",
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "veer-bahadur-singh-purvanchal-university-jaunpur",
+    "name": "Veer Bahadur Singh Purvanchal University, Jaunpur",
+    "shortName": "Veer Bahadur Singh Purvanchal University",
+    "city": "Jaunpur",
+    "region": "Eastern UP",
+    "type": "Government",
+    "branches": [
+      "IT",
+      "AIML",
+      "ECE",
+      "CSE-DS",
+      "ME",
+      "EACE",
+      "CSE",
+      "EE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "lloyd-institute-of-engineering-and-technology",
+    "name": "LLOYD INSTITUTE OF ENGINEERING AND TECHNOLOGY",
+    "shortName": "LLOYD INSTITUTE OF ENGINEERING AND TECHN",
+    "city": "",
+    "region": "Other",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ECE",
+      "ME",
+      "EEE",
+      "CE",
+      "EEVDAT"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "shivdan-singh-institute-of-technology-managementaligarh",
+    "name": "SHIVDAN SINGH INSTITUTE OF TECHNOLOGY & MANAGEMENT,ALIGARH",
+    "shortName": "SHIVDAN SINGH INSTITUTE OF TECHNOLOGY & ",
+    "city": "Aligarh",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "CSE-AI",
+      "BIOTECH",
+      "EEE",
+      "AE",
+      "IT"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "jss-academy-of-technical-educationgautam-buddh-nagar",
+    "name": "J.S.S. ACADEMY OF TECHNICAL EDUCATION,GAUTAM BUDDH NAGAR",
+    "shortName": "J.S.S. ACADEMY OF TECHNICAL EDUCATION",
+    "city": "Gautam Buddh Nagar",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "IT"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "aligarh-college-of-engg-techaligarh",
+    "name": "ALIGARH COLLEGE OF ENGG. & TECH,ALIGARH",
+    "shortName": "ALIGARH COLLEGE OF ENGG. & TECH,ALIGARH",
+    "city": "Aligarh",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "ECE",
+      "CSE",
+      "IT",
+      "AE",
+      "ME",
+      "EEE",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "jms-institute-of-technology-ghaziabad",
+    "name": "JMS INSTITUTE OF TECHNOLOGY, GHAZIABAD",
+    "shortName": "JMS INSTITUTE OF TECHNOLOGY, GHAZIABAD",
+    "city": "Ghaziabad",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ECE",
+      "CE",
+      "EEE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "rajkiya-engineering-collegemainpuri",
+    "name": "RAJKIYA ENGINEERING COLLEGE,MAINPURI",
+    "shortName": "RAJKIYA ENGINEERING COLLEGE,MAINPURI",
+    "city": "Mainpuri",
+    "region": "Western UP",
+    "type": "Government",
+    "branches": [
+      "CE",
+      "CSE",
+      "IT",
+      "EE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "allenhouse-institute-of-technologykanpur",
+    "name": "ALLENHOUSE INSTITUTE OF TECHNOLOGY,KANPUR",
+    "shortName": "ALLENHOUSE INSTITUTE OF TECHNOLOGY",
+    "city": "Kanpur",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "ME",
+      "ECE",
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "institute-of-engineering-technologysitapur",
+    "name": "INSTITUTE OF ENGINEERING & TECHNOLOGY,SITAPUR",
+    "shortName": "INSTITUTE OF ENGINEERING & TECHNOLOGY",
+    "city": "Sitapur",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "EEE",
+      "ME",
+      "AIML",
+      "CE",
+      "ECE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "axis-institute-of-technology-managementkanpur",
+    "name": "AXIS INSTITUTE OF TECHNOLOGY & MANAGEMENT,KANPUR",
+    "shortName": "AXIS INSTITUTE OF TECHNOLOGY & MANAGEMEN",
+    "city": "Kanpur",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "EE",
+      "CSE",
+      "ECE",
+      "IT",
+      "CE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "feroze-gandhi-institute-of-engg-and-technology-raibareilly",
+    "name": "FEROZE GANDHI INSTITUTE OF ENGG AND TECHNOLOGY, RAIBAREILLY",
+    "shortName": "FEROZE GANDHI INSTITUTE OF ENGG AND TECH",
+    "city": "Raibareilly",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "AE",
+      "ME",
+      "CSE",
+      "ECE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "prayag-institute-of-technology-managementallahabad",
+    "name": "PRAYAG INSTITUTE OF TECHNOLOGY & MANAGEMENT,ALLAHABAD",
+    "shortName": "PRAYAG INSTITUTE OF TECHNOLOGY & MANAGEM",
+    "city": "Allahabad",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "ME",
+      "CSE",
+      "CE",
+      "EE",
+      "ECE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "kipm-college-of-engg-technologygorakhpur",
+    "name": "KIPM COLLEGE OF ENGG. & TECHNOLOGY,GORAKHPUR",
+    "shortName": "KIPM COLLEGE OF ENGG. & TECHNOLOGY",
+    "city": "Gorakhpur",
+    "region": "Eastern UP",
+    "type": "Private",
+    "branches": [
+      "ECE",
+      "CSE",
+      "EE",
+      "CE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "kashi-institute-of-technologyvaranasi",
+    "name": "KASHI INSTITUTE OF TECHNOLOGY,VARANASI",
+    "shortName": "KASHI INSTITUTE OF TECHNOLOGY,VARANASI",
+    "city": "Varanasi",
+    "region": "Eastern UP",
+    "type": "Private",
+    "branches": [
+      "ECE",
+      "CE",
+      "CSE",
+      "ME",
+      "EEE",
+      "BIOTECH"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "greater-noida-college",
+    "name": "GREATER NOIDA COLLEGE",
+    "shortName": "GREATER NOIDA COLLEGE",
+    "city": "",
+    "region": "Other",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "CSE-AI"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "veer-kunwar-institute-of-technologybijnaur",
+    "name": "VEER KUNWAR INSTITUTE OF TECHNOLOGY,BIJNAUR",
+    "shortName": "VEER KUNWAR INSTITUTE OF TECHNOLOGY",
+    "city": "Bijnaur",
+    "region": "Other",
+    "type": "Private",
+    "branches": [
+      "ME",
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "sardar-vallabhbhai-patel-university-of-agriculture-technology-meerut",
+    "name": "Sardar Vallabhbhai Patel University of Agriculture & Technology, Meerut",
+    "shortName": "Sardar Vallabhbhai Patel University of A",
+    "city": "Meerut",
+    "region": "NCR",
+    "type": "Government",
+    "branches": [
+      "CS"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "srinstitute-of-management-technologylucknow",
+    "name": "S.R.INSTITUTE OF MANAGEMENT & TECHNOLOGY,LUCKNOW",
+    "shortName": "S.R.INSTITUTE OF MANAGEMENT & TECHNOLOGY",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE-AI",
+      "CSE",
+      "AE",
+      "CE",
+      "EEE",
+      "ME",
+      "ECE",
+      "IT",
+      "BIOTECH"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "rajkiya-engineering-collegeazamgarh",
+    "name": "RAJKIYA ENGINEERING COLLEGE,AZAMGARH",
+    "shortName": "RAJKIYA ENGINEERING COLLEGE,AZAMGARH",
+    "city": "Azamgarh",
+    "region": "Eastern UP",
+    "type": "Government",
+    "branches": [
+      "ME",
+      "IT",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "meerut-institute-of-technologymeerut",
+    "name": "MEERUT INSTITUTE OF TECHNOLOGY,MEERUT",
+    "shortName": "MEERUT INSTITUTE OF TECHNOLOGY,MEERUT",
+    "city": "Meerut",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ME",
+      "CE",
+      "ECE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "maharana-pratap-institue-of-technology-gorakhpur",
+    "name": "MAHARANA PRATAP INSTITUE OF TECHNOLOGY, GORAKHPUR",
+    "shortName": "MAHARANA PRATAP INSTITUE OF TECHNOLOGY",
+    "city": "Gorakhpur",
+    "region": "Eastern UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "AIML",
+      "EEVDAT",
+      "CSE-CS",
+      "CSE-DS"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "bbscollege-of-engginering-and-technologyallahabad",
+    "name": "B.B.S.COLLEGE OF ENGGINERING AND TECHNOLOGY,ALLAHABAD",
+    "shortName": "B.B.S.COLLEGE OF ENGGINERING AND TECHNOL",
+    "city": "Allahabad",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CE",
+      "CSE",
+      "ME",
+      "EEE",
+      "ECE",
+      "IT"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "shri-rammurti-smarak-college-of-engg-and-technologybareilly",
+    "name": "SHRI RAMMURTI SMARAK COLLEGE OF ENGG AND TECHNOLOGY,BAREILLY",
+    "shortName": "SHRI RAMMURTI SMARAK COLLEGE OF ENGG AND",
+    "city": "Bareilly",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ECE",
+      "IT",
+      "EEE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "gcrg-memorial-trusts-group-of-institutions-faculty-of-engineeringlucknow",
+    "name": "G.C.R.G. MEMORIAL TRUST'S GROUP OF INSTITUTIONS, FACULTY OF ENGINEERING,LUCKNOW",
+    "shortName": "G.C.R.G. MEMORIAL TRUST'S GROUP OF INSTI",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "CE",
+      "AIML",
+      "ME",
+      "EE",
+      "BIOTECH"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "bharat-institute-of-technologymeerut",
+    "name": "BHARAT INSTITUTE OF TECHNOLOGY,MEERUT",
+    "shortName": "BHARAT INSTITUTE OF TECHNOLOGY,MEERUT",
+    "city": "Meerut",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "CSE-AI",
+      "IT",
+      "ECE",
+      "ME",
+      "EEE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "glbajaj-group-of-institutionsmathura",
+    "name": "G.L.BAJAJ GROUP OF INSTITUTIONS,MATHURA",
+    "shortName": "G.L.BAJAJ GROUP OF INSTITUTIONS,MATHURA",
+    "city": "Mathura",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "CS",
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "rdengineering-collegeghaziabad",
+    "name": "R.D.ENGINEERING COLLEGE,GHAZIABAD",
+    "shortName": "R.D.ENGINEERING COLLEGE,GHAZIABAD",
+    "city": "Ghaziabad",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "IT",
+      "ECE",
+      "ME",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "meerut-international-institute-of-technologymeerut",
+    "name": "MEERUT INTERNATIONAL INSTITUTE OF TECHNOLOGY,MEERUT",
+    "shortName": "MEERUT INTERNATIONAL INSTITUTE OF TECHNO",
+    "city": "Meerut",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "CE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "sunrise-institute-of-engineering-technical-managementunnao",
+    "name": "SUNRISE INSTITUTE OF ENGINEERING TECHNICAL & MANAGEMENT,UNNAO",
+    "shortName": "SUNRISE INSTITUTE OF ENGINEERING TECHNIC",
+    "city": "Unnao",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "EE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "rajkiya-engineering-collegekannauj",
+    "name": "RAJKIYA ENGINEERING COLLEGE,KANNAUJ",
+    "shortName": "RAJKIYA ENGINEERING COLLEGE,KANNAUJ",
+    "city": "Kannauj",
+    "region": "Other",
+    "type": "Government",
+    "branches": [
+      "CE",
+      "CSE",
+      "EEE",
+      "EE",
+      "EEF"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "maharana-institute-of-professional-studieskanpur",
+    "name": "MAHARANA INSTITUTE OF PROFESSIONAL STUDIES,KANPUR",
+    "shortName": "MAHARANA INSTITUTE OF PROFESSIONAL STUDI",
+    "city": "Kanpur",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ETE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "iec-college-of-engineering-technologygautam-buddh-nagar",
+    "name": "I.E.C. COLLEGE OF ENGINEERING & TECHNOLOGY,GAUTAM BUDDH NAGAR",
+    "shortName": "I.E.C. COLLEGE OF ENGINEERING & TECHNOLO",
+    "city": "Gautam Buddh Nagar",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ECE",
+      "IT"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "iimt-college-of-engineeringgautam-buddh-nagar",
+    "name": "IIMT COLLEGE OF ENGINEERING,GAUTAM BUDDH NAGAR",
+    "shortName": "IIMT COLLEGE OF ENGINEERING",
+    "city": "Gautam Buddh Nagar",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "ECE",
+      "CSE",
+      "IT",
+      "CSE-AI",
+      "ME",
+      "AIAADS",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "saroj-institute-of-tech-managementlucknow",
+    "name": "SAROJ INSTITUTE OF TECH. & MANAGEMENT,LUCKNOW",
+    "shortName": "SAROJ INSTITUTE OF TECH. & MANAGEMENT",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CE",
+      "CSE",
+      "CSE-AI",
+      "BME",
+      "EE",
+      "ME",
+      "BIOTECH",
+      "AE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "vivekananda-college-of-technology-managementaligarh",
+    "name": "VIVEKANANDA COLLEGE OF TECHNOLOGY & MANAGEMENT,ALIGARH",
+    "shortName": "VIVEKANANDA COLLEGE OF TECHNOLOGY & MANA",
+    "city": "Aligarh",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "IT",
+      "ECE",
+      "CSE",
+      "AE",
+      "ME",
+      "CE",
+      "EE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "rvinstitute-of-technologybijnaur",
+    "name": "R.V.INSTITUTE OF TECHNOLOGY,BIJNAUR",
+    "shortName": "R.V.INSTITUTE OF TECHNOLOGY,BIJNAUR",
+    "city": "Bijnaur",
+    "region": "Other",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ECE",
+      "EE",
+      "CE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "sanskar-college-of-engineering-technologyghaziabad",
+    "name": "SANSKAR COLLEGE OF ENGINEERING & TECHNOLOGY,GHAZIABAD",
+    "shortName": "SANSKAR COLLEGE OF ENGINEERING & TECHNOL",
+    "city": "Ghaziabad",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "CE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "united-institute-of-technologyallahabad",
+    "name": "UNITED INSTITUTE OF TECHNOLOGY,ALLAHABAD",
+    "shortName": "UNITED INSTITUTE OF TECHNOLOGY,ALLAHABAD",
+    "city": "Allahabad",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "ECE",
+      "CSE",
+      "ME",
+      "EE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "lloyd-institute-of-management-technologygautam-buddh-nagar",
+    "name": "LLOYD INSTITUTE OF MANAGEMENT & TECHNOLOGY,GAUTAM BUDDH NAGAR",
+    "shortName": "LLOYD INSTITUTE OF MANAGEMENT & TECHNOLO",
+    "city": "Gautam Buddh Nagar",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "kanpur-institute-of-technologykanpur",
+    "name": "KANPUR INSTITUTE OF TECHNOLOGY,KANPUR",
+    "shortName": "KANPUR INSTITUTE OF TECHNOLOGY,KANPUR",
+    "city": "Kanpur",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "ECE",
+      "CSE",
+      "EEE",
+      "BIOTECH",
+      "ME",
+      "IT"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "dr-kn-modi-institute-of-engg-technologyghaziabad",
+    "name": "DR. K.N. MODI INSTITUTE OF ENGG. & TECHNOLOGY,GHAZIABAD",
+    "shortName": "DR. K.N. MODI INSTITUTE OF ENGG. & TECHN",
+    "city": "Ghaziabad",
+    "region": "NCR",
+    "type": "Government",
+    "branches": [
+      "ECE",
+      "EE",
+      "IT",
+      "CSE",
+      "CSE-AI",
+      "CHE",
+      "ME",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "indraprastha-institute-of-management-technologysaharanpur",
+    "name": "INDRAPRASTHA INSTITUTE OF MANAGEMENT & TECHNOLOGY,SAHARANPUR",
+    "shortName": "INDRAPRASTHA INSTITUTE OF MANAGEMENT & T",
+    "city": "Saharanpur",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ME",
+      "CE",
+      "EE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "babu-banarasi-das-northern-india-institute-of-technologylucknow",
+    "name": "BABU BANARASI DAS NORTHERN INDIA INSTITUTE OF TECHNOLOGY,LUCKNOW",
+    "shortName": "BABU BANARASI DAS NORTHERN INDIA INSTITU",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ME",
+      "ECE",
+      "IT",
+      "CSE-AI",
+      "EE",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "mahatama-gandhi-mission-college-of-engg-technologygautam-buddh-nagar",
+    "name": "MAHATAMA GANDHI MISSION COLLEGE OF ENGG. & TECHNOLOGY,GAUTAM BUDDH NAGAR",
+    "shortName": "MAHATAMA GANDHI MISSION COLLEGE OF ENGG.",
+    "city": "Gautam Buddh Nagar",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "CE",
+      "ECE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "babu-banarsi-das-institute-of-techghaziabad",
+    "name": "BABU BANARSI DAS INSTITUTE OF TECH.,GHAZIABAD",
+    "shortName": "BABU BANARSI DAS INSTITUTE OF TECH.",
+    "city": "Ghaziabad",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ECE",
+      "EEE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "bhagwant-institute-of-technologymuzaffarnagar",
+    "name": "BHAGWANT INSTITUTE OF TECHNOLOGY,MUZAFFARNAGAR",
+    "shortName": "BHAGWANT INSTITUTE OF TECHNOLOGY",
+    "city": "Muzaffarnagar",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "CE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "school-of-management-science-sms-institute-of-technologylucknow",
+    "name": "SCHOOL OF MANAGEMENT SCIENCE (SMS INSTITUTE OF TECHNOLOGY),LUCKNOW",
+    "shortName": "SCHOOL OF MANAGEMENT SCIENCE (SMS INSTIT",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "EE",
+      "CE",
+      "AIAADS",
+      "ME",
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "dev-bhoomi-group-of-institutionssaharanpur",
+    "name": "DEV BHOOMI GROUP OF INSTITUTIONS,SAHARANPUR",
+    "shortName": "DEV BHOOMI GROUP OF INSTITUTIONS",
+    "city": "Saharanpur",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ME",
+      "CE",
+      "EEE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "acharya-narendra-deva-university-of-agriculture-technology-kumarganj-ayodhya",
+    "name": "Acharya Narendra Deva University of Agriculture & Technology, Kumarganj, Ayodhya",
+    "shortName": "Acharya Narendra Deva University of Agri",
+    "city": "Ayodhya",
+    "region": "Eastern UP",
+    "type": "Government",
+    "branches": [
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "mangalmay-institute-of-engineering-and-technology-gautam-buddha-nagar",
+    "name": "MANGALMAY INSTITUTE OF ENGINEERING AND TECHNOLOGY ,GAUTAM BUDDHA NAGAR",
+    "shortName": "MANGALMAY INSTITUTE OF ENGINEERING AND T",
+    "city": "Gautam Buddha Nagar",
+    "region": "Other",
+    "type": "Private",
+    "branches": [
+      "CSE-AI",
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "institute-of-technology-managementgorakhpur",
+    "name": "INSTITUTE OF TECHNOLOGY & MANAGEMENT,GORAKHPUR",
+    "shortName": "INSTITUTE OF TECHNOLOGY & MANAGEMENT",
+    "city": "Gorakhpur",
+    "region": "Eastern UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ECE",
+      "EACACT",
+      "CE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "shambhu-nath-institute-of-engg-technolgyallahabad",
+    "name": "SHAMBHU NATH INSTITUTE OF ENGG. & TECHNOLGY,ALLAHABAD",
+    "shortName": "SHAMBHU NATH INSTITUTE OF ENGG. & TECHNO",
+    "city": "Allahabad",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ECE",
+      "CE",
+      "EE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "bsa-college-of-engineering-technologymathura",
+    "name": "B.S.A. COLLEGE OF ENGINEERING & TECHNOLOGY,MATHURA",
+    "shortName": "B.S.A. COLLEGE OF ENGINEERING & TECHNOLO",
+    "city": "Mathura",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ME",
+      "ECE",
+      "CE",
+      "EE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "indian-institute-of-handloom-technologyvaranasi",
+    "name": "INDIAN INSTITUTE OF HANDLOOM TECHNOLOGY,VARANASI",
+    "shortName": "INDIAN INSTITUTE OF HANDLOOM TECHNOLOGY",
+    "city": "Varanasi",
+    "region": "Eastern UP",
+    "type": "Private",
+    "branches": [
+      "HTT"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "baba-shaheb-dr-b-r-ambedkar-college-of-agricultural-engineering-and-technology-e",
+    "name": "Baba Shaheb (Dr.) B R Ambedkar College of Agricultural Engineering and Technology, Etawah (CSAUAT)",
+    "shortName": "Baba Shaheb (Dr.) B R Ambedkar College o",
+    "city": "Etawah (csauat)",
+    "region": "Central UP",
+    "type": "Government",
+    "branches": [
+      "CSE",
+      "ECE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "saraswati-higher-education-technical-college-of-engineeringvaranasi",
+    "name": "SARASWATI HIGHER EDUCATION & TECHNICAL COLLEGE OF ENGINEERING,VARANASI",
+    "shortName": "SARASWATI HIGHER EDUCATION & TECHNICAL C",
+    "city": "Varanasi",
+    "region": "Eastern UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "delhi-institute-of-engineering-technologymeerut",
+    "name": "DELHI INSTITUTE OF ENGINEERING & TECHNOLOGY,MEERUT",
+    "shortName": "DELHI INSTITUTE OF ENGINEERING & TECHNOL",
+    "city": "Meerut",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "ECE",
+      "CSE",
+      "EE",
+      "CE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "ssld-varshney-engineering-collegealigarh",
+    "name": "SSLD VARSHNEY ENGINEERING COLLEGE,ALIGARH",
+    "shortName": "SSLD VARSHNEY ENGINEERING COLLEGE",
+    "city": "Aligarh",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "sri-ram-group-of-collegesmuzaffarnagar",
+    "name": "SRI RAM GROUP OF COLLEGES,MUZAFFARNAGAR",
+    "shortName": "SRI RAM GROUP OF COLLEGES,MUZAFFARNAGAR",
+    "city": "Muzaffarnagar",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ECE",
+      "ME",
+      "CE",
+      "EE",
+      "AIML"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "goel-institute-of-technology-managementlucknow",
+    "name": "GOEL INSTITUTE OF TECHNOLOGY & MANAGEMENT,LUCKNOW",
+    "shortName": "GOEL INSTITUTE OF TECHNOLOGY & MANAGEMEN",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ECE",
+      "ME",
+      "IT",
+      "EE",
+      "CE",
+      "BIOTECH"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "apex-institute-of-technologyrampur",
+    "name": "APEX INSTITUTE OF TECHNOLOGY,RAMPUR",
+    "shortName": "APEX INSTITUTE OF TECHNOLOGY,RAMPUR",
+    "city": "Rampur",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ME",
+      "EE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "raj-kumar-goel-institute-of-technology-managementghaziabad",
+    "name": "RAJ KUMAR GOEL INSTITUTE OF TECHNOLOGY & MANAGEMENT,GHAZIABAD",
+    "shortName": "RAJ KUMAR GOEL INSTITUTE OF TECHNOLOGY &",
+    "city": "Ghaziabad",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "IT",
+      "ECE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "naraina-college-of-engineering-technologykanpur",
+    "name": "NARAINA COLLEGE OF ENGINEERING & TECHNOLOGY,KANPUR",
+    "shortName": "NARAINA COLLEGE OF ENGINEERING & TECHNOL",
+    "city": "Kanpur",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ECE",
+      "CSE-AI"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "kunwar-satya-veera-college-of-engg-managementbijnaur",
+    "name": "KUNWAR SATYA VEERA COLLEGE OF ENGG. & MANAGEMENT,BIJNAUR",
+    "shortName": "KUNWAR SATYA VEERA COLLEGE OF ENGG. & MA",
+    "city": "Bijnaur",
+    "region": "Other",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ME",
+      "EE",
+      "ECE",
+      "CE",
+      "BIOTECH"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "faculty-of-engg-agra-collegeagra",
+    "name": "FACULTY OF ENGG, AGRA COLLEGE,AGRA",
+    "shortName": "FACULTY OF ENGG, AGRA COLLEGE,AGRA",
+    "city": "Agra",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ME",
+      "CE",
+      "EE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "rameshwaram-institute-of-technology-managementlucknow",
+    "name": "RAMESHWARAM INSTITUTE OF TECHNOLOGY & MANAGEMENT,LUCKNOW",
+    "shortName": "RAMESHWARAM INSTITUTE OF TECHNOLOGY & MA",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "EE",
+      "CE",
+      "ECE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "sagar-institute-of-technology-managementbarabanki",
+    "name": "SAGAR INSTITUTE OF TECHNOLOGY & MANAGEMENT,BARABANKI",
+    "shortName": "SAGAR INSTITUTE OF TECHNOLOGY & MANAGEME",
+    "city": "Barabanki",
+    "region": "Eastern UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "IT",
+      "ME",
+      "EE",
+      "ECE",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "neelkanth-institute-of-technologymeerut",
+    "name": "NEELKANTH INSTITUTE OF TECHNOLOGY,MEERUT",
+    "shortName": "NEELKANTH INSTITUTE OF TECHNOLOGY,MEERUT",
+    "city": "Meerut",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "AIAADS",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "bncollege-of-engineering-technologybncetlucknow",
+    "name": "B.N.COLLEGE OF ENGINEERING & TECHNOLOGY(BNCET),LUCKNOW",
+    "shortName": "B.N.COLLEGE OF ENGINEERING & TECHNOLOGY(",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CE",
+      "ME",
+      "CSE",
+      "EE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "vivekanand-institute-of-technology-scienceghaziabad",
+    "name": "VIVEKANAND INSTITUTE OF TECHNOLOGY & SCIENCE,GHAZIABAD",
+    "shortName": "VIVEKANAND INSTITUTE OF TECHNOLOGY & SCI",
+    "city": "Ghaziabad",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "maharaja-agrasen-college-of-engineering-technologyjpnagar",
+    "name": "MAHARAJA AGRASEN COLLEGE OF ENGINEERING & TECHNOLOGY,J.P.NAGAR",
+    "shortName": "MAHARAJA AGRASEN COLLEGE OF ENGINEERING ",
+    "city": "J.p.nagar",
+    "region": "Other",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "CE",
+      "EEE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "sri-rammurti-smarak-college-of-engineering-technology-researchbareilly",
+    "name": "SRI RAMMURTI SMARAK COLLEGE OF ENGINEERING TECHNOLOGY & RESEARCH,BAREILLY",
+    "shortName": "SRI RAMMURTI SMARAK COLLEGE OF ENGINEERI",
+    "city": "Bareilly",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "krishna-institute-of-technologykanpur",
+    "name": "KRISHNA INSTITUTE OF TECHNOLOGY,KANPUR",
+    "shortName": "KRISHNA INSTITUTE OF TECHNOLOGY,KANPUR",
+    "city": "Kanpur",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "seth-vishambhar-nath-institute-of-engg-technologybarabanki",
+    "name": "SETH VISHAMBHAR NATH INSTITUTE OF ENGG. & TECHNOLOGY,BARABANKI",
+    "shortName": "SETH VISHAMBHAR NATH INSTITUTE OF ENGG. ",
+    "city": "Barabanki",
+    "region": "Eastern UP",
+    "type": "Private",
+    "branches": [
+      "CE",
+      "EE",
+      "CSE",
+      "ME",
+      "BIOTECH",
+      "AE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "marathwada-instt-of-technologybulandshahar",
+    "name": "MARATHWADA INSTT. OF TECHNOLOGY,BULANDSHAHAR",
+    "shortName": "MARATHWADA INSTT. OF TECHNOLOGY",
+    "city": "Bulandshahar",
+    "region": "Other",
+    "type": "Private",
+    "branches": [
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "sunderdeep-engineering-collegeghaziabad",
+    "name": "SUNDERDEEP ENGINEERING COLLEGE,GHAZIABAD",
+    "shortName": "SUNDERDEEP ENGINEERING COLLEGE,GHAZIABAD",
+    "city": "Ghaziabad",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "rajarshi-rananjay-singh-institute-of-management-technologysultanpur",
+    "name": "RAJARSHI RANANJAY SINGH INSTITUTE OF MANAGEMENT & TECHNOLOGY,SULTANPUR",
+    "shortName": "RAJARSHI RANANJAY SINGH INSTITUTE OF MAN",
+    "city": "Sultanpur",
+    "region": "Eastern UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "IT",
+      "ECE",
+      "EEE",
+      "ME",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "indian-institute-of-carpet-technologybhadohi",
+    "name": "INDIAN INSTITUTE OF CARPET TECHNOLOGY,BHADOHI",
+    "shortName": "INDIAN INSTITUTE OF CARPET TECHNOLOGY",
+    "city": "Bhadohi",
+    "region": "Other",
+    "type": "Private",
+    "branches": [
+      "CTT",
+      "CTTF"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "dronacharya-group-of-institutionsgautam-buddh-nagar",
+    "name": "DRONACHARYA GROUP OF INSTITUTIONS,GAUTAM BUDDH NAGAR",
+    "shortName": "DRONACHARYA GROUP OF INSTITUTIONS",
+    "city": "Gautam Buddh Nagar",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "CS",
+      "IT",
+      "EEE",
+      "EACE",
+      "ECE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "global-institute-of-information-technologygautam-buddh-nagar",
+    "name": "GLOBAL INSTITUTE OF INFORMATION TECHNOLOGY,GAUTAM BUDDH NAGAR",
+    "shortName": "GLOBAL INSTITUTE OF INFORMATION TECHNOLO",
+    "city": "Gautam Buddh Nagar",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ECE",
+      "IT"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "college-of-engg-rural-technologymeerut",
+    "name": "COLLEGE OF ENGG. & RURAL TECHNOLOGY,MEERUT",
+    "shortName": "COLLEGE OF ENGG. & RURAL TECHNOLOGY",
+    "city": "Meerut",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ECE",
+      "ME",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "accurate-institute-of-management-technologygautam-buddh-nagar",
+    "name": "ACCURATE INSTITUTE OF MANAGEMENT & TECHNOLOGY,GAUTAM BUDDH NAGAR",
+    "shortName": "ACCURATE INSTITUTE OF MANAGEMENT & TECHN",
+    "city": "Gautam Buddh Nagar",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "CS",
+      "CSE-AI"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "central-institute-of-petrochemicals-engineering-technology-cipet-lucknow",
+    "name": "CENTRAL INSTITUTE OF PETROCHEMICALS ENGINEERING & TECHNOLOGY (CIPET), LUCKNOW",
+    "shortName": "CENTRAL INSTITUTE OF PETROCHEMICALS ENGI",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "PE",
+      "MT"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "eshan-college-of-engineeringmathura",
+    "name": "ESHAN COLLEGE OF ENGINEERING,MATHURA",
+    "shortName": "ESHAN COLLEGE OF ENGINEERING,MATHURA",
+    "city": "Mathura",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "ME",
+      "EE",
+      "CE",
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "institute-of-technology-managementlucknow",
+    "name": "INSTITUTE OF TECHNOLOGY & MANAGEMENT,LUCKNOW",
+    "shortName": "INSTITUTE OF TECHNOLOGY & MANAGEMENT",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "AUTO",
+      "ECE",
+      "CE",
+      "IT",
+      "EEE",
+      "AE",
+      "BIOTECH",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "kalicharan-nigam-institute-of-technologybanda",
+    "name": "KALICHARAN NIGAM INSTITUTE OF TECHNOLOGY,BANDA",
+    "shortName": "KALICHARAN NIGAM INSTITUTE OF TECHNOLOGY",
+    "city": "Banda",
+    "region": "Bundelkhand",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "EEE",
+      "CE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "apollo-institute-of-technologykanpur",
+    "name": "APOLLO INSTITUTE OF TECHNOLOGY,KANPUR",
+    "shortName": "APOLLO INSTITUTE OF TECHNOLOGY,KANPUR",
+    "city": "Kanpur",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "EEE",
+      "CSE",
+      "CE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "rdengineering-college-research-centreghaziabad",
+    "name": "R.D.ENGINEERING COLLEGE RESEARCH CENTRE,GHAZIABAD",
+    "shortName": "R.D.ENGINEERING COLLEGE RESEARCH CENTRE",
+    "city": "Ghaziabad",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "ldc-institute-of-technical-studiesallahabad",
+    "name": "LDC INSTITUTE OF TECHNICAL STUDIES,ALLAHABAD",
+    "shortName": "LDC INSTITUTE OF TECHNICAL STUDIES",
+    "city": "Allahabad",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "EEE",
+      "ME",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "prasad-institute-of-technologyjaunpur",
+    "name": "PRASAD INSTITUTE OF TECHNOLOGY,JAUNPUR",
+    "shortName": "PRASAD INSTITUTE OF TECHNOLOGY,JAUNPUR",
+    "city": "Jaunpur",
+    "region": "Eastern UP",
+    "type": "Private",
+    "branches": [
+      "EE",
+      "CSE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "united-college-of-engiineering-researchgreater-noidagautam-buddh-nagar",
+    "name": "UNITED COLLEGE OF ENGIINEERING & RESEARCH,GREATER NOIDA,GAUTAM BUDDH NAGAR",
+    "shortName": "UNITED COLLEGE OF ENGIINEERING & RESEARC",
+    "city": "Gautam Buddh Nagar",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "nigc-institute-of-technology-and-management-bijnor",
+    "name": "NIGC INSTITUTE OF TECHNOLOGY AND MANAGEMENT, BIJNOR",
+    "shortName": "NIGC INSTITUTE OF TECHNOLOGY AND MANAGEM",
+    "city": "Bijnor",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "CE",
+      "EE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "dr-virendra-swarup-memorial-trust-group-of-institutionsunnao",
+    "name": "DR. VIRENDRA SWARUP MEMORIAL TRUST GROUP OF INSTITUTIONS,UNNAO",
+    "shortName": "DR. VIRENDRA SWARUP MEMORIAL TRUST GROUP",
+    "city": "Unnao",
+    "region": "Central UP",
+    "type": "Government",
+    "branches": [
+      "CE",
+      "CSE",
+      "ME",
+      "EE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "rakshpal-bahadur-college-of-engineering-technologybareilly",
+    "name": "RAKSHPAL BAHADUR COLLEGE OF ENGINEERING & TECHNOLOGY,BAREILLY",
+    "shortName": "RAKSHPAL BAHADUR COLLEGE OF ENGINEERING ",
+    "city": "Bareilly",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "AIAADS",
+      "ME",
+      "EEE",
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "himalayan-institute-of-technology-managementlucknow",
+    "name": "HIMALAYAN INSTITUTE OF TECHNOLOGY & MANAGEMENT,LUCKNOW",
+    "shortName": "HIMALAYAN INSTITUTE OF TECHNOLOGY & MANA",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "EEE",
+      "AE",
+      "CE",
+      "ME",
+      "ECE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "kothiwal-institute-of-technology-professional-studiesmoradabad",
+    "name": "KOTHIWAL INSTITUTE OF TECHNOLOGY & PROFESSIONAL STUDIES,MORADABAD",
+    "shortName": "KOTHIWAL INSTITUTE OF TECHNOLOGY & PROFE",
+    "city": "Moradabad",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "IT",
+      "ME",
+      "CE",
+      "ECE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "shanti-institute-of-technologymeerut",
+    "name": "SHANTI INSTITUTE OF TECHNOLOGY,MEERUT",
+    "shortName": "SHANTI INSTITUTE OF TECHNOLOGY,MEERUT",
+    "city": "Meerut",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ME",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "adhunik-college-of-enggghaziabad",
+    "name": "ADHUNIK COLLEGE OF ENGG.,GHAZIABAD",
+    "shortName": "ADHUNIK COLLEGE OF ENGG.,GHAZIABAD",
+    "city": "Ghaziabad",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ECE",
+      "ME",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "panchwati-institute-of-engineering-technologymeerut",
+    "name": "PANCHWATI INSTITUTE OF ENGINEERING & TECHNOLOGY,MEERUT",
+    "shortName": "PANCHWATI INSTITUTE OF ENGINEERING & TEC",
+    "city": "Meerut",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ME",
+      "EEE",
+      "CE",
+      "ECE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "hardayal-technical-campusmathura",
+    "name": "HARDAYAL TECHNICAL CAMPUS,MATHURA",
+    "shortName": "HARDAYAL TECHNICAL CAMPUS,MATHURA",
+    "city": "Mathura",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "shri-sidhi-vinayak-institute-of-technologybareilly",
+    "name": "SHRI SIDHI VINAYAK INSTITUTE OF TECHNOLOGY,BAREILLY",
+    "shortName": "SHRI SIDHI VINAYAK INSTITUTE OF TECHNOLO",
+    "city": "Bareilly",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "IT",
+      "EE",
+      "ME",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "prabhat-engineering-collegekanpur-dehat",
+    "name": "PRABHAT ENGINEERING COLLEGE,KANPUR DEHAT",
+    "shortName": "PRABHAT ENGINEERING COLLEGE,KANPUR DEHAT",
+    "city": "Kanpur Dehat",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ME",
+      "CE",
+      "EE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "rajshree-institute-of-management-technologybareilly",
+    "name": "RAJSHREE INSTITUTE OF MANAGEMENT & TECHNOLOGY,BAREILLY",
+    "shortName": "RAJSHREE INSTITUTE OF MANAGEMENT & TECHN",
+    "city": "Bareilly",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "IT",
+      "CS",
+      "CSE",
+      "ME",
+      "CE",
+      "ECE",
+      "EEE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "landmark-technical-campusjpnagar",
+    "name": "LANDMARK TECHNICAL CAMPUS,J.P.NAGAR",
+    "shortName": "LANDMARK TECHNICAL CAMPUS,J.P.NAGAR",
+    "city": "J.p.nagar",
+    "region": "Other",
+    "type": "Private",
+    "branches": [
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "gokaran-narvadeshwar-institute-of-technology-managementbarabanki",
+    "name": "GOKARAN NARVADESHWAR INSTITUTE OF TECHNOLOGY & MANAGEMENT,BARABANKI",
+    "shortName": "GOKARAN NARVADESHWAR INSTITUTE OF TECHNO",
+    "city": "Barabanki",
+    "region": "Eastern UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "kcmt-campus-2-prem-prakash-gupta-institute-of-engineeringbareilly",
+    "name": "KCMT CAMPUS 2 PREM PRAKASH GUPTA INSTITUTE OF ENGINEERING,BAREILLY",
+    "shortName": "KCMT CAMPUS 2 PREM PRAKASH GUPTA INSTITU",
+    "city": "Bareilly",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "dr-rizvi-college-of-engineeringkaushambi",
+    "name": "DR. RIZVI COLLEGE OF ENGINEERING,,KAUSHAMBI",
+    "shortName": "DR. RIZVI COLLEGE OF ENGINEERING",
+    "city": "Kaushambi",
+    "region": "Other",
+    "type": "Government",
+    "branches": [
+      "CSE",
+      "ME",
+      "CE",
+      "EEE",
+      "ECE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "anacollege-of-engineering-managementbareilly",
+    "name": "A.N.A.COLLEGE OF ENGINEERING & MANAGEMENT,BAREILLY",
+    "shortName": "A.N.A.COLLEGE OF ENGINEERING & MANAGEMEN",
+    "city": "Bareilly",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "IT",
+      "CSE",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "fit-engineering-collegemeerut",
+    "name": "FIT ENGINEERING COLLEGE,MEERUT",
+    "shortName": "FIT ENGINEERING COLLEGE,MEERUT",
+    "city": "Meerut",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ME",
+      "CE",
+      "ECE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "abss-institute-of-technology-meerutmeerut",
+    "name": "ABSS INSTITUTE OF TECHNOLOGY, MEERUT,MEERUT",
+    "shortName": "ABSS INSTITUTE OF TECHNOLOGY",
+    "city": "Meerut",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "EE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "hmfa-memorial-institute-of-engineering-technologyallahabad",
+    "name": "HMFA MEMORIAL INSTITUTE OF ENGINEERING & TECHNOLOGY,ALLAHABAD",
+    "shortName": "HMFA MEMORIAL INSTITUTE OF ENGINEERING &",
+    "city": "Allahabad",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ME",
+      "EEE",
+      "CE",
+      "ECE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "radha-govind-group-of-institutionsmeerut",
+    "name": "RADHA GOVIND GROUP OF INSTITUTIONS,MEERUT",
+    "shortName": "RADHA GOVIND GROUP OF INSTITUTIONS",
+    "city": "Meerut",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "faculty-of-engineering-shanti-niketan-trusts-group-of-institutionsmeerut",
+    "name": "FACULTY OF ENGINEERING SHANTI NIKETAN TRUST'S GROUP OF INSTITUTIONS,MEERUT",
+    "shortName": "FACULTY OF ENGINEERING SHANTI NIKETAN TR",
+    "city": "Meerut",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "chaudhary-beeri-singh-college-of-engineering-managementagra",
+    "name": "CHAUDHARY BEERI SINGH COLLEGE OF ENGINEERING & MANAGEMENT,AGRA",
+    "shortName": "CHAUDHARY BEERI SINGH COLLEGE OF ENGINEE",
+    "city": "Agra",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "EEE",
+      "CSE",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "vision-institute-of-technologyaligarh",
+    "name": "VISION INSTITUTE OF TECHNOLOGY,ALIGARH",
+    "shortName": "VISION INSTITUTE OF TECHNOLOGY,ALIGARH",
+    "city": "Aligarh",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ME",
+      "ECE",
+      "AE",
+      "CE",
+      "EEE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "neelam-college-of-engineering-technologyagra",
+    "name": "NEELAM COLLEGE OF ENGINEERING & TECHNOLOGY,AGRA",
+    "shortName": "NEELAM COLLEGE OF ENGINEERING & TECHNOLO",
+    "city": "Agra",
+    "region": "Western UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "CE",
+      "ME"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "institute-of-technology-managementmaharajganj",
+    "name": "INSTITUTE OF TECHNOLOGY & MANAGEMENT,MAHARAJGANJ",
+    "shortName": "INSTITUTE OF TECHNOLOGY & MANAGEMENT",
+    "city": "Maharajganj",
+    "region": "Other",
+    "type": "Private",
+    "branches": [
+      "CE",
+      "CSE-AI",
+      "CSE",
+      "ME",
+      "ECE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "maharana-institute-of-tech-scienceslucknow",
+    "name": "MAHARANA INSTITUTE OF TECH. & SCIENCES,LUCKNOW",
+    "shortName": "MAHARANA INSTITUTE OF TECH. & SCIENCES",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "CSE-AI"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "suyash-institute-of-information-technologygorakhpur",
+    "name": "SUYASH INSTITUTE OF INFORMATION TECHNOLOGY,GORAKHPUR",
+    "shortName": "SUYASH INSTITUTE OF INFORMATION TECHNOLO",
+    "city": "Gorakhpur",
+    "region": "Eastern UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "ECE",
+      "ME",
+      "CE",
+      "EEE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "mangalmay-institute-of-management-and-technology-gautam-buddha-nagar",
+    "name": "MANGALMAY INSTITUTE OF MANAGEMENT AND TECHNOLOGY, GAUTAM BUDDHA NAGAR",
+    "shortName": "MANGALMAY INSTITUTE OF MANAGEMENT AND TE",
+    "city": "Gautam Buddha Nagar",
+    "region": "Other",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "CSE-AI"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "azad-institute-of-engineering-technologylucknow",
+    "name": "AZAD INSTITUTE OF ENGINEERING & TECHNOLOGY,LUCKNOW",
+    "shortName": "AZAD INSTITUTE OF ENGINEERING & TECHNOLO",
+    "city": "Lucknow",
+    "region": "Central UP",
+    "type": "Private",
+    "branches": [
+      "CSE",
+      "EE",
+      "CE",
+      "ME",
+      "BIOTECH",
+      "EEE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "svs-group-of-institutionsmeerut",
+    "name": "SVS GROUP OF INSTITUTIONS,MEERUT",
+    "shortName": "SVS GROUP OF INSTITUTIONS,MEERUT",
+    "city": "Meerut",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "EE",
+      "CSE",
+      "CE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "shri-nath-ji-institute-for-technical-educationmeerut",
+    "name": "SHRI NATH JI INSTITUTE FOR TECHNICAL EDUCATION,MEERUT",
+    "shortName": "SHRI NATH JI INSTITUTE FOR TECHNICAL EDU",
+    "city": "Meerut",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "ME",
+      "CE",
+      "EEE",
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "hlm-collegeghaziabad",
+    "name": "HLM COLLEGE,GHAZIABAD",
+    "shortName": "HLM COLLEGE,GHAZIABAD",
+    "city": "Ghaziabad",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "rishi-institute-of-engineering-technologymeerut",
+    "name": "RISHI INSTITUTE OF ENGINEERING & TECHNOLOGY,MEERUT",
+    "shortName": "RISHI INSTITUTE OF ENGINEERING & TECHNOL",
+    "city": "Meerut",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "ECE",
+      "CE",
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "modinagar-institute-of-technologyghaziabad",
+    "name": "MODINAGAR INSTITUTE OF TECHNOLOGY,GHAZIABAD",
+    "shortName": "MODINAGAR INSTITUTE OF TECHNOLOGY",
+    "city": "Ghaziabad",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CE",
+      "ME",
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  },
+  {
+    "id": "ideal-instt-of-technologyghaziabad",
+    "name": "IDEAL INSTT. OF TECHNOLOGY,GHAZIABAD",
+    "shortName": "IDEAL INSTT. OF TECHNOLOGY,GHAZIABAD",
+    "city": "Ghaziabad",
+    "region": "NCR",
+    "type": "Private",
+    "branches": [
+      "CSE"
+    ],
+    "year": "2025",
+    "sourceRef": "Official UPTAC 2025"
+  }
+]

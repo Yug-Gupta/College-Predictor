@@ -1,0 +1,302 @@
+[
+  {
+    "code": "AMAIA",
+    "name": "Advanced Mechatronics and Industrial Automation",
+    "shortName": "AMAIA",
+    "popular": false
+  },
+  {
+    "code": "AE",
+    "name": "Aeronautical Engineering",
+    "shortName": "AE",
+    "popular": false
+  },
+  {
+    "code": "AG",
+    "name": "Agricultural Engineering (FW)",
+    "shortName": "AG",
+    "popular": false
+  },
+  {
+    "code": "AIAADS",
+    "name": "Artificial Inelligence (AI) And Data Science",
+    "shortName": "AIAADS",
+    "popular": false
+  },
+  {
+    "code": "AIML",
+    "name": "Artificial Intelligence And Machine Learning",
+    "shortName": "AIML",
+    "popular": true
+  },
+  {
+    "code": "AUTO",
+    "name": "Automobile Engineering",
+    "shortName": "AUTO",
+    "popular": false
+  },
+  {
+    "code": "AR",
+    "name": "Automotion & Robotics",
+    "shortName": "AR",
+    "popular": false
+  },
+  {
+    "code": "B",
+    "name": "Bioinformatics",
+    "shortName": "B",
+    "popular": false
+  },
+  {
+    "code": "BME",
+    "name": "Biomedical Engineering",
+    "shortName": "BME",
+    "popular": false
+  },
+  {
+    "code": "BIOTECH",
+    "name": "Biotechnology",
+    "shortName": "BIOTECH",
+    "popular": false
+  },
+  {
+    "code": "CTT",
+    "name": "Carpet & Textile Technology",
+    "shortName": "CTT",
+    "popular": false
+  },
+  {
+    "code": "CTTF",
+    "name": "Carpet & Textile Technology (FW)",
+    "shortName": "CTTF",
+    "popular": false
+  },
+  {
+    "code": "CHE",
+    "name": "Chemical Engineering",
+    "shortName": "CHE",
+    "popular": false
+  },
+  {
+    "code": "CE",
+    "name": "Civil Engineering",
+    "shortName": "CE",
+    "popular": false
+  },
+  {
+    "code": "CSIT",
+    "name": "Computer Science & Information Technology",
+    "shortName": "CSIT",
+    "popular": false
+  },
+  {
+    "code": "CSBS",
+    "name": "Computer Science And Business System",
+    "shortName": "CSBS",
+    "popular": false
+  },
+  {
+    "code": "CSD",
+    "name": "Computer Science And Design",
+    "shortName": "CSD",
+    "popular": false
+  },
+  {
+    "code": "CSE",
+    "name": "Computer Science and Engineering",
+    "shortName": "CSE",
+    "popular": true
+  },
+  {
+    "code": "CSE-AI",
+    "name": "Computer Science and Engineering (Artificial Intelligence)",
+    "shortName": "CSE-AI",
+    "popular": true
+  },
+  {
+    "code": "CS",
+    "name": "Computer Science and Information  Technology",
+    "shortName": "CS",
+    "popular": false
+  },
+  {
+    "code": "CSE-CS",
+    "name": "CYBER SECURITY",
+    "shortName": "CSE-CS",
+    "popular": false
+  },
+  {
+    "code": "CSE-DS",
+    "name": "DATA SCIENCE",
+    "shortName": "CSE-DS",
+    "popular": true
+  },
+  {
+    "code": "EACE",
+    "name": "Electrical and Computer Engineering",
+    "shortName": "EACE",
+    "popular": false
+  },
+  {
+    "code": "EACEF",
+    "name": "Electrical and Computer Engineering (FW)",
+    "shortName": "EACEF",
+    "popular": false
+  },
+  {
+    "code": "EE",
+    "name": "Electrical Engineering",
+    "shortName": "EE",
+    "popular": false
+  },
+  {
+    "code": "EI",
+    "name": "Electronics & Instrumentation Engineering",
+    "shortName": "EI",
+    "popular": false
+  },
+  {
+    "code": "EACACT",
+    "name": "Electronics and Communication (Advanced Communication Technology) (FW)",
+    "shortName": "EACACT",
+    "popular": false
+  },
+  {
+    "code": "ECE",
+    "name": "Electronics and Communication Engineering",
+    "shortName": "ECE",
+    "popular": true
+  },
+  {
+    "code": "ETE",
+    "name": "Electronics and Telecommunication Engineering",
+    "shortName": "ETE",
+    "popular": false
+  },
+  {
+    "code": "EEE",
+    "name": "Electronics Engineering",
+    "shortName": "EEE",
+    "popular": false
+  },
+  {
+    "code": "EEF",
+    "name": "Electronics Engineering (FW)",
+    "shortName": "EEF",
+    "popular": false
+  },
+  {
+    "code": "EEVDAT",
+    "name": "Electronics Engineering (VLSI Design and Technology)",
+    "shortName": "EEVDAT",
+    "popular": false
+  },
+  {
+    "code": "FET",
+    "name": "Food Engineering & technology",
+    "shortName": "FET",
+    "popular": false
+  },
+  {
+    "code": "FT",
+    "name": "Food Technology",
+    "shortName": "FT",
+    "popular": false
+  },
+  {
+    "code": "HTT",
+    "name": "Handloom & Textile Technology",
+    "shortName": "HTT",
+    "popular": false
+  },
+  {
+    "code": "PROD",
+    "name": "Industrial Production Engineering",
+    "shortName": "PROD",
+    "popular": false
+  },
+  {
+    "code": "IT",
+    "name": "Information Technology",
+    "shortName": "IT",
+    "popular": true
+  },
+  {
+    "code": "ICE",
+    "name": "Instrumentation and Control Engineering",
+    "shortName": "ICE",
+    "popular": false
+  },
+  {
+    "code": "MMFT",
+    "name": "Man Made Fibre Technology",
+    "shortName": "MMFT",
+    "popular": false
+  },
+  {
+    "code": "MT",
+    "name": "Manufacturing Technology",
+    "shortName": "MT",
+    "popular": false
+  },
+  {
+    "code": "MAC",
+    "name": "Mathematics and Computing",
+    "shortName": "MAC",
+    "popular": false
+  },
+  {
+    "code": "MACF",
+    "name": "Mathematics and Computing (FW)",
+    "shortName": "MACF",
+    "popular": false
+  },
+  {
+    "code": "MAMEM",
+    "name": "Mechanical and  Mechatronics Engineering(Additive Manufacturing)",
+    "shortName": "MAMEM",
+    "popular": false
+  },
+  {
+    "code": "ME",
+    "name": "Mechanical Engineering",
+    "shortName": "ME",
+    "popular": false
+  },
+  {
+    "code": "MN",
+    "name": "Mining Engineering",
+    "shortName": "MN",
+    "popular": false
+  },
+  {
+    "code": "PE",
+    "name": "Plastic Engineering",
+    "shortName": "PE",
+    "popular": false
+  },
+  {
+    "code": "TC",
+    "name": "Textile Chemistry",
+    "shortName": "TC",
+    "popular": false
+  },
+  {
+    "code": "TE",
+    "name": "Textile Engineering",
+    "shortName": "TE",
+    "popular": false
+  },
+  {
+    "code": "TT",
+    "name": "Textile Technology",
+    "shortName": "TT",
+    "popular": false
+  },
+  {
+    "code": "TTF",
+    "name": "Textile Technology (FW)",
+    "shortName": "TTF",
+    "popular": false
+  }
+]

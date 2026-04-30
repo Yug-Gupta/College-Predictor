@@ -1,0 +1,51 @@
+{
+  "dataYear": "2025",
+  "counselling": "UPTAC B.Tech. Counselling 2025",
+  "source": "https://uptac.admissions.nic.in/or-cr/",
+  "normalizedAt": "2026-04-18T18:38:43.019Z",
+  "totalCutoffRecords": 10804,
+  "totalColleges": 200,
+  "totalBranches": 50,
+  "categories": [
+    "BC",
+    "BC(AF)",
+    "BC(FF)",
+    "BC(Girl)",
+    "BC(PH)",
+    "EWS(AF)",
+    "EWS(FF)",
+    "EWS(GL)",
+    "EWS(OPEN)",
+    "EWS(PH)",
+    "OPEN",
+    "OPEN(AF)",
+    "OPEN(FF)",
+    "OPEN(GIRL)",
+    "OPEN(PH)",
+    "OPEN(TF)",
+    "SC",
+    "SC(AF)",
+    "SC(FF)",
+    "SC(Girl)",
+    "SC(PH)",
+    "ST",
+    "ST(AF)",
+    "ST(Girl)"
+  ],
+  "rounds": [
+    "Round 1",
+    "Round 2",
+    "Round 3",
+    "Round 4",
+    "Round 6",
+    "Round 7"
+  ],
+  "quotas": [
+    "Home State",
+    "All India"
+  ],
+  "seatGenders": [
+    "Both Male and Female Seats",
+    "Female Seats"
+  ]
+}
