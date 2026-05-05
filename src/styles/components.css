@@ -654,44 +654,6 @@
   color: var(--footer-link-hover);
 }
 
-/* Tooltip */
-.footer-tooltip {
-  position: absolute;
-  bottom: calc(100% + 10px);
-  left: 50%;
-  transform: translateX(-50%) translateY(4px);
-  background: var(--bg-surface, #1e293b);
-  color: var(--text-primary, #e2e8f0);
-  border: 1px solid var(--border-light, rgba(255,255,255,0.1));
-  border-radius: var(--radius-md);
-  padding: 0.5rem 0.875rem;
-  font-size: 0.6875rem;
-  font-weight: 400;
-  white-space: nowrap;
-  pointer-events: none;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
-  z-index: 10;
-  letter-spacing: 0;
-}
-
-.footer-tooltip::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 5px solid transparent;
-  border-top-color: var(--border-light, rgba(255,255,255,0.1));
-}
-
-.footer-attr-name:hover .footer-tooltip {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) translateY(0);
-}
 
 /* Social links */
 .footer-social-links {
@@ -764,10 +726,6 @@
   .footer-attribution {
     flex-wrap: wrap;
     gap: 0.375rem;
-  }
-
-  .footer-tooltip {
-    display: none;
   }
 }
 
