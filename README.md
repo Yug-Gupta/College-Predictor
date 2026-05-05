@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="#features"><img src="https://img.shields.io/badge/Features-8+-4f46e5?style=for-the-badge" alt="Features" /></a>
+  <a href="#features"><img src="https://img.shields.io/badge/Features-10+-4f46e5?style=for-the-badge" alt="Features" /></a>
   <a href="#data-source"><img src="https://img.shields.io/badge/Records-10%2C804-10b981?style=for-the-badge" alt="Records" /></a>
   <a href="#tech-stack"><img src="https://img.shields.io/badge/Built%20With-Vite%20%2B%20JS-f59e0b?style=for-the-badge" alt="Tech Stack" /></a>
   <a href="#license"><img src="https://img.shields.io/badge/License-MIT-38bdf8?style=for-the-badge" alt="License" /></a>
@@ -27,7 +27,7 @@
 
 ## 📋 Overview
 
-**UPTAC College Predictor 2026** is a free, open-source Single Page Application (SPA) that helps JEE Main aspirants predict their admission chances at **200+ AKTU-affiliated engineering colleges** in Uttar Pradesh. 
+**UPTAC College Predictor 2026** is a free, open-source Single Page Application (SPA) that helps JEE Main aspirants predict their admission chances at **200+ AKTU-affiliated engineering colleges** in Uttar Pradesh.
 
 The prediction engine uses **10,804 official Opening Rank / Closing Rank records** from the UPTAC 2025 B.Tech Counselling data (sourced from [admissions.nic.in](https://uptac.admissions.nic.in)) to estimate chances for the upcoming **2026 counselling cycle**.
 
@@ -40,14 +40,14 @@ The prediction engine uses **10,804 official Opening Rank / Closing Rank records
 | Feature | Description |
 |---|---|
 | 🎯 **Smart Predictions** | Rank-based predictions with **Safe / Moderate / Ambitious** classification and confidence percentages |
+| 🔍 **Advanced Fuzzy Search** | Typo-tolerant search with text normalization, token-based matching, and multi-field relevance scoring |
 | 📊 **Cutoff Trend Charts** | Interactive Chart.js visualizations of cutoff trends across counselling rounds |
 | ⚖️ **College Comparison** | Side-by-side comparison of up to **3 colleges** across cutoffs, type, location, and more |
-| 🔖 **Bookmark & Save** | Save favourite college-branch combinations with instant reactivity across all pages |
+| 🔖 **Bookmark & Save** | Save favourite college-branch combinations with **instant reactive sync** across all pages |
 | 📥 **CSV Export** | Export your prediction results as a downloadable CSV file for offline reference |
-| 🔍 **Smart Filters** | Filter by chance level, college type, region, branch, and free-text search |
 | 🎨 **5 Visual Themes** | Indigo Pro, Midnight Dark, Ocean Breeze, Sunset Warm, and Forest Green |
-| 📱 **Fully Responsive** | Optimized layouts for mobile, tablet, and desktop screens |
-| 📖 **Counselling Guide** | Step-by-step guide to the UPTAC counselling process |
+| 📱 **Production-Ready Responsive** | Pixel-perfect layouts from **320px ultra-small** to desktop, with touch-optimized interactions |
+| 📖 **Counselling Guide** | Step-by-step guide to the UPTAC counselling process with FAQs |
 | 💡 **Smart Recommendations** | AI-powered "Best Fit" college suggestions with personalized counselling tips |
 
 ---
@@ -130,11 +130,29 @@ The core prediction engine (`src/engine/predictor.js`) follows a **closing-rank-
 4. **Filtering** — Results are filtered by category, quota, round, branch, college type, region, and seat gender
 5. **Sorting** — Results are sorted by chance level (safe → moderate → ambitious), then confidence, then closing rank
 
+### Search Engine
+
+The search system (`src/utils/search.js` + `src/engine/predictor.js`) provides high-performance fuzzy matching:
+
+- **Text Normalization** — Lowercasing, punctuation removal, and whitespace collapsing
+- **Levenshtein Distance** — Fuzzy matching that tolerates up to 2 typos for words 4+ letters long
+- **Multi-Field Relevance Scoring** — Searches across college name, short name, branch, city, region, and type
+- **Token-Based Matching** — Each search word is matched independently and scored for partial/full matches
+- **Compact Query Matching** — Handles queries like `"glbajaj"` matching `"GL Bajaj"` seamlessly
+
 ### Recommendation Engine
 
 The recommender (`src/engine/recommender.js`) provides:
 - **Best Fit** colleges — Safe picks sorted by prestige (government first, then by competitiveness)
 - **Counselling Tips** — Personalized advice based on rank bracket and result distribution
+
+### Reactive State Management
+
+The app uses a custom **pub/sub state store** (`src/state.js`) for real-time UI synchronization:
+- Bookmark toggling reflects instantly across results, detail, and saved pages
+- Duplicate-prevention guards at both the data and key-format levels
+- College-level and branch-level bookmark strategies with automatic cleanup
+- All state changes persist to `localStorage` and notify subscribers immediately
 
 ---
 
@@ -151,8 +169,8 @@ College-Predictor/
 │   └── verify-data.js          # Data integrity verification
 ├── src/
 │   ├── components/             # Reusable UI components
-│   │   ├── header.js           # Navigation header with badges
-│   │   ├── footer.js           # Site footer
+│   │   ├── header.js           # Navigation header with mobile menu & badges
+│   │   ├── footer.js           # Professional footer with social links
 │   │   └── theme-switcher.js   # Theme picker dropdown
 │   ├── data/                   # Data layer
 │   │   ├── official/           # Official UPTAC 2025 JSON datasets
@@ -165,7 +183,7 @@ College-Predictor/
 │   │   ├── cutoffs.js          # Cutoff query functions
 │   │   └── categories.js       # Category/quota definitions
 │   ├── engine/                 # Prediction logic
-│   │   ├── predictor.js        # Core prediction engine
+│   │   ├── predictor.js        # Core prediction engine + search scoring
 │   │   └── recommender.js      # Smart recommendation engine
 │   ├── pages/                  # Page renderers (8 pages)
 │   │   ├── home.js             # Landing page
@@ -176,21 +194,23 @@ College-Predictor/
 │   │   ├── saved.js            # Bookmarked colleges
 │   │   ├── guide.js            # Counselling guide
 │   │   └── about.js            # About & disclaimer
-│   ├── styles/                 # CSS design system
+│   ├── styles/                 # CSS design system (7 files)
 │   │   ├── base.css            # Reset, typography, layout
-│   │   ├── themes.css          # 5 color themes via CSS vars
+│   │   ├── themes.css          # 5 color themes via CSS vars (~60 tokens each)
 │   │   ├── components.css      # Component styles
 │   │   ├── pages.css           # Page-specific styles
+│   │   ├── responsive.css      # Production-level responsive (320px–1024px+)
 │   │   ├── animations.css      # Transitions & keyframes
 │   │   └── utilities.css       # Utility classes
 │   ├── utils/                  # Helper utilities
 │   │   ├── dom.js              # DOM manipulation helpers
 │   │   ├── format.js           # Number/text formatting
 │   │   ├── storage.js          # LocalStorage wrapper
+│   │   ├── search.js           # Fuzzy search & text normalization
 │   │   └── export.js           # CSV export utility
 │   ├── main.js                 # App bootstrap & route registration
 │   ├── router.js               # Hash-based SPA router
-│   └── state.js                # Centralized state management
+│   └── state.js                # Centralized reactive state management
 ├── index.html                  # Entry HTML
 ├── vite.config.js              # Vite configuration
 ├── tsconfig.json               # TypeScript configuration
@@ -214,11 +234,34 @@ College-Predictor/
 
 ### Architecture Highlights
 
-- **Custom SPA Router** — Hash-based routing with parameter parsing and page transitions
-- **Reactive State Management** — Pub/sub pattern with subscriber notifications for real-time UI updates
+- **Custom SPA Router** — Hash-based routing with parameter parsing and smooth page transitions
+- **Reactive State Management** — Pub/sub pattern with subscriber notifications for real-time UI updates across all pages
+- **Advanced Search System** — Token-based fuzzy matching with Levenshtein distance, text normalization, and multi-field relevance scoring
 - **Data Pipeline** — Automated scraping → normalization → verification scripts for official UPTAC data
 - **Theme System** — 5 complete themes defined entirely through CSS custom properties (~60 tokens each)
+- **Production-Level Responsive** — 5-breakpoint responsive system (1024px, 768px, 480px, 360px, landscape) with touch-optimized interactions, safe-area support for notch devices, and print styles
 - **No External Framework** — Pure vanilla JS for minimal bundle size and maximum control
+
+---
+
+## 📱 Responsive Design
+
+The application is meticulously optimized for every screen size with **production-level responsive CSS**:
+
+| Breakpoint | Target | Optimizations |
+|---|---|---|
+| **1024px** | Tablet | 2-column grids, collapsible sidebars |
+| **768px** | Small Tablet | Mobile nav, single-column layouts, touch-friendly targets (44px min) |
+| **480px** | Mobile | Compact cards, stacked ranks, tighter spacing |
+| **360px** | Ultra-small | Reduced font sizes, minimal padding, overflow prevention |
+| **Landscape** | Rotated mobile | Horizontal hero, 4-column stats, narrower nav drawer |
+
+**Additional optimizations:**
+- 🎯 **Touch targets** — Minimum 44px hit areas on touch devices (`pointer: coarse`)
+- 📱 **iOS zoom prevention** — 16px minimum font size on form inputs
+- 🔲 **Safe area insets** — Proper padding for notched/rounded-corner devices
+- 🖨️ **Print styles** — Clean, ink-friendly output with hidden nav/footer
+- ♿ **Accessibility** — Proper ARIA labels, semantic HTML, and keyboard navigation
 
 ---
 
@@ -287,6 +330,6 @@ This project is open-source and available under the [MIT License](LICENSE).
 ---
 
 <p align="center">
-  Made with ❤️ for engineering aspirants<br/>
+  Designed & Developed with ❤️ by <strong><a href="https://github.com/Yug-Gupta">Yug Gupta</a></strong><br/>
   <strong>© 2026 UPTAC College Predictor</strong>
 </p>
