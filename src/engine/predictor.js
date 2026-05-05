@@ -7,6 +7,7 @@
 import { cutoffs, DATA_YEAR, DATA_SOURCE, DATA_ESTIMATED_FOR } from '../data/cutoffs.js';
 import { getCollege } from '../data/colleges.js';
 import { getBranchName } from '../data/branches.js';
+import { normalizeSearchText, isFuzzyMatch } from '../utils/search.js';
 
 /**
  * Classify admission chance based on user rank vs official opening/closing rank.
@@ -111,7 +112,7 @@ export function predict(input) {
     branch = 'all',
     collegeType = 'all',
     region = 'all',
-    seatGender = 'all',
+    seatGender = 'Both Male and Female Seats',
   } = input;
 
   const userRank = parseInt(rank, 10);
@@ -126,7 +127,7 @@ export function predict(input) {
     if (c.category !== category) return false;
     if (c.quota !== quota) return false;
     if (branch !== 'all' && c.branchCode !== branch) return false;
-    if (seatGender !== 'all' && c.seatGender !== seatGender) return false;
+    if (c.seatGender !== seatGender) return false;
     return true;
   });
 
@@ -187,6 +188,17 @@ export function predict(input) {
         dataSource: DATA_SOURCE,
         estimatedForYear: DATA_ESTIMATED_FOR,
         sourceRef: entry.sourceRef,
+        
+        // Search Optimization
+        _searchFields: [
+          normalizeSearchText(college ? college.name : entry.collegeName),
+          normalizeSearchText(college ? college.shortName : entry.collegeName),
+          normalizeSearchText(getBranchName(entry.branchCode)),
+          normalizeSearchText(college ? college.city : ''),
+          normalizeSearchText(college ? college.region : ''),
+          normalizeSearchText(college ? college.type : ''),
+          normalizeSearchText(entry.branchCode)
+        ].filter(Boolean)
       });
     }
   }
@@ -207,26 +219,31 @@ export function predict(input) {
  */
 export function sortResults(results, sortBy = 'chance') {
   const sorted = [...results];
-  switch (sortBy) {
-    case 'chance':
-      sorted.sort((a, b) => {
+  sorted.sort((a, b) => {
+    // 1. Search Relevance (Highest priority if search is active)
+    if (a.searchScore !== undefined && b.searchScore !== undefined) {
+      if (a.searchScore !== b.searchScore) {
+        return b.searchScore - a.searchScore;
+      }
+    }
+
+    // 2. Fallback to normal sort
+    switch (sortBy) {
+      case 'chance': {
         const order = { safe: 0, moderate: 1, ambitious: 2 };
         if (order[a.chance] !== order[b.chance]) return order[a.chance] - order[b.chance];
         return b.confidence - a.confidence;
-      });
-      break;
-    case 'closing_rank':
-      sorted.sort((a, b) => a.closingRank - b.closingRank);
-      break;
-    case 'college_name':
-      sorted.sort((a, b) => a.collegeName.localeCompare(b.collegeName));
-      break;
-    case 'opening_rank':
-      sorted.sort((a, b) => a.openingRank - b.openingRank);
-      break;
-    default:
-      break;
-  }
+      }
+      case 'closing_rank':
+        return a.closingRank - b.closingRank;
+      case 'college_name':
+        return a.collegeName.localeCompare(b.collegeName);
+      case 'opening_rank':
+        return a.openingRank - b.openingRank;
+      default:
+        return 0;
+    }
+  });
   return sorted;
 }
 
@@ -234,15 +251,87 @@ export function sortResults(results, sortBy = 'chance') {
  * Apply result filters
  */
 export function filterResults(results, filters) {
-  return results.filter(r => {
+  let filtered = results;
+
+  // 1. Apply Search Filter & Calculate Score
+  if (filters.search) {
+    const query = normalizeSearchText(filters.search);
+    const compactQuery = query.replace(/\s+/g, '');
+    const tokens = query.split(' ').filter(Boolean);
+
+    filtered = filtered.map(r => {
+      let score = 0;
+      const normFields = r._searchFields;
+      const compFields = normFields.map(f => f.replace(/\s+/g, ''));
+
+      // Exact match on full query
+      if (normFields.some(f => f === query)) {
+        score += 100;
+      }
+      
+      // Exact match on compact query (e.g. "glbajaj" === "glbajaj")
+      if (compFields.some(f => f === compactQuery)) {
+        score += 80;
+      }
+
+      // Starts with
+      if (normFields.some(f => f.startsWith(query)) || compFields.some(f => f.startsWith(compactQuery))) {
+        score += 60;
+      }
+      
+      // Contains full query
+      if (normFields.some(f => f.includes(query)) || compFields.some(f => f.includes(compactQuery))) {
+        score += 50;
+      }
+
+      // Token matching
+      let tokenMatches = 0;
+      for (const token of tokens) {
+        let matched = false;
+        
+        // Exact token match
+        if (normFields.some(f => f.includes(token))) {
+          tokenMatches++;
+          matched = true;
+        } 
+        
+        // Fuzzy token match
+        if (!matched) {
+          let fuzzyMatched = false;
+          for (const f of normFields) {
+            const words = f.split(' ');
+            for (const word of words) {
+               if (isFuzzyMatch(token, word)) {
+                 fuzzyMatched = true;
+                 break;
+               }
+            }
+            if (fuzzyMatched) break;
+          }
+          if (fuzzyMatched) tokenMatches += 0.8;
+        }
+      }
+
+      if (tokenMatches > 0) {
+        // Boost score based on percentage of matched tokens
+        const matchRatio = tokenMatches / tokens.length;
+        if (matchRatio === 1) score += 40;
+        else if (matchRatio > 0.5) score += 20 * matchRatio;
+      }
+
+      return { ...r, searchScore: score };
+    }).filter(r => r.searchScore >= 10); // Require at least a decent partial/token match
+  } else {
+    // Clear search score if no search
+    filtered = filtered.map(r => ({ ...r, searchScore: undefined }));
+  }
+
+  // 2. Apply Standard Filters
+  return filtered.filter(r => {
     if (filters.chance && filters.chance !== 'all' && r.chance !== filters.chance) return false;
     if (filters.collegeType && filters.collegeType !== 'all' && r.collegeType !== filters.collegeType) return false;
     if (filters.region && filters.region !== 'all' && r.region !== filters.region) return false;
     if (filters.branch && filters.branch !== 'all' && r.branchCode !== filters.branch) return false;
-    if (filters.search) {
-      const s = filters.search.toLowerCase();
-      if (!r.collegeName.toLowerCase().includes(s) && !r.branchName.toLowerCase().includes(s) && !r.city.toLowerCase().includes(s)) return false;
-    }
     return true;
   });
 }

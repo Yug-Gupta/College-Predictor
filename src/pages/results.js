@@ -6,7 +6,7 @@ import { getResults, getFormData, setResults, isBookmarked, isCollegeBookmarked,
 import { predict, filterResults, sortResults } from '../engine/predictor.js';
 import { getBestFitColleges, getCounsellingTips, getResultStats } from '../engine/recommender.js';
 import { formatRank } from '../utils/format.js';
-import { showToast } from '../utils/dom.js';
+import { showToast, debounce } from '../utils/dom.js';
 import { exportToCSV } from '../utils/export.js';
 import { branches } from '../data/branches.js';
 import { regions } from '../data/categories.js';
@@ -223,7 +223,7 @@ function renderResultCards(results) {
       <div class="empty-state" style="padding:3rem;">
         <div class="empty-state-icon"><i data-lucide="search-x" style="width:60px;height:60px;"></i></div>
         <h3>No Matches Found</h3>
-        <p>Try adjusting your filters or search criteria.</p>
+        <p>We couldn't find any close matches. Try checking for typos or relaxing your filters.</p>
       </div>
     `;
   }
@@ -327,10 +327,11 @@ export function initResultsEvents() {
   // Search
   const searchInput = document.getElementById('results-search');
   if (searchInput) {
-    searchInput.addEventListener('input', () => {
+    const handleSearch = debounce(() => {
       currentFilters.search = searchInput.value;
       applyFilters();
-    });
+    }, 250);
+    searchInput.addEventListener('input', handleSearch);
   }
 
   // Sort

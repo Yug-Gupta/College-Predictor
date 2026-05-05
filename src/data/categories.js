@@ -61,6 +61,12 @@ export const quotas = metadata.quotas || ['Home State', 'All India'];
 // Seat genders
 export const seatGenders = metadata.seatGenders || ['Both Male and Female Seats', 'Female Seats'];
 
+// Seat gender display names
+export const seatGenderNames = {
+  'Both Male and Female Seats': 'Neutral',
+  'Female Seats': 'Female',
+};
+
 // Regions (derived from colleges data)
 export const regions = ['NCR', 'Central UP', 'Western UP', 'Eastern UP', 'Bundelkhand', 'Other'];
 

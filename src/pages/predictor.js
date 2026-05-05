@@ -2,7 +2,7 @@
 // PREDICTOR.JS — Predictor Form Page (Updated for Official Data)
 // ============================================
 
-import { mainCategories, categories, categoryNames, quotas, seatGenders, regions } from '../data/categories.js';
+import { mainCategories, categories, categoryNames, quotas, seatGenders, seatGenderNames, regions } from '../data/categories.js';
 import { branches } from '../data/branches.js';
 import { setFormData, getFormData } from '../state.js';
 import { navigate } from '../router.js';
@@ -49,7 +49,7 @@ export async function renderPredictor() {
   ).join('');
 
   const genderOptions = seatGenders.map(g =>
-    `<option value="${g}" ${savedForm?.seatGender === g ? 'selected' : ''}>${g}</option>`
+    `<option value="${g}" ${(!savedForm?.seatGender && g === 'Both Male and Female Seats') || savedForm?.seatGender === g ? 'selected' : ''}>${seatGenderNames[g] || g}</option>`
   ).join('');
 
   return `
@@ -99,7 +99,6 @@ export async function renderPredictor() {
               <div class="form-group">
                 <label class="form-label">Seat Gender</label>
                 <select class="form-select" id="input-gender" name="seatGender">
-                  <option value="all" ${!savedForm?.seatGender || savedForm?.seatGender === 'all' ? 'selected' : ''}>All Seats</option>
                   ${genderOptions}
                 </select>
                 <span class="form-hint">Filter by seat gender from official UPTAC data</span>
