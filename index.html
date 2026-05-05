@@ -1,6 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="indigo">
+<html lang="en">
 <head>
+    <script>
+        (function() {
+            try {
+                var storedTheme = localStorage.getItem('uptac_theme');
+                var theme = storedTheme ? JSON.parse(storedTheme) : 'ocean';
+                document.documentElement.setAttribute('data-theme', theme);
+            } catch (e) {
+                document.documentElement.setAttribute('data-theme', 'ocean');
+            }
+        })();
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UPTAC College Predictor 2026 | Find Your Best Engineering College</title>

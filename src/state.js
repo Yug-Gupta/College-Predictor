@@ -20,7 +20,7 @@ function deduplicateArray(arr) {
 
 // --- State Store ---
 const state = {
-  theme: loadFromStorage(STORAGE_KEYS.THEME, 'indigo'),
+  theme: loadFromStorage(STORAGE_KEYS.THEME, 'ocean'),
   bookmarks: deduplicateArray(loadFromStorage(STORAGE_KEYS.BOOKMARKS, [])),
   recentlyViewed: loadFromStorage(STORAGE_KEYS.RECENT, []),
   compareList: loadFromStorage(STORAGE_KEYS.COMPARE, []),
