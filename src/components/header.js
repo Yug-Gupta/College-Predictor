@@ -35,9 +35,17 @@ export function renderHeader() {
 
   const mobileNavLinksHtml = navItems.map(item => {
     const isActive = route === item.path;
-    return `<a href="#${item.path}" data-link class="mobile-nav-link ${isActive ? 'active' : ''}" onclick="document.getElementById('mobile-nav').classList.remove('open')">
+    let badge = '';
+    if (item.path === '/compare' && compareCount > 0) {
+      badge = `<span style="background:var(--accent-primary);color:white;font-size:0.6rem;padding:1px 5px;border-radius:10px;margin-left:auto;font-weight:800;">${compareCount}</span>`;
+    }
+    if (item.path === '/saved' && savedCount > 0) {
+      badge = `<span style="background:var(--accent-primary);color:white;font-size:0.6rem;padding:1px 5px;border-radius:10px;margin-left:auto;font-weight:800;">${savedCount}</span>`;
+    }
+    return `<a href="#${item.path}" data-link class="mobile-nav-link ${isActive ? 'active' : ''}" data-mobile-link>
       <i data-lucide="${item.icon}" style="width:18px;height:18px;"></i>
       ${item.label}
+      ${badge}
     </a>`;
   }).join('');
 
@@ -57,7 +65,7 @@ export function renderHeader() {
 
           <div class="header-actions">
             ${renderThemeSwitcher()}
-            <button class="mobile-menu-btn" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Open menu">
+            <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false">
               <i data-lucide="menu"></i>
             </button>
           </div>
@@ -65,9 +73,9 @@ export function renderHeader() {
       </div>
     </div>
 
-    <div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Navigation menu">
       <div class="mobile-nav-content">
-        <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close menu">
+        <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">
           <i data-lucide="x" style="width:24px;height:24px;"></i>
         </button>
         <div style="padding:0.5rem 0.5rem;margin-bottom:0.5rem;">
@@ -85,14 +93,62 @@ export function renderHeader() {
   initHeaderEvents();
 }
 
-function initHeaderEvents() {
-  // Close mobile nav on overlay click
+function closeMobileNav() {
   const mobileNav = document.getElementById('mobile-nav');
+  const toggleBtn = document.getElementById('mobile-menu-toggle');
+  if (mobileNav) {
+    mobileNav.classList.remove('open');
+    document.body.style.overflow = '';
+    if (toggleBtn) toggleBtn.setAttribute('aria-expanded', 'false');
+  }
+}
+
+function openMobileNav() {
+  const mobileNav = document.getElementById('mobile-nav');
+  const toggleBtn = document.getElementById('mobile-menu-toggle');
+  if (mobileNav) {
+    mobileNav.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    if (toggleBtn) toggleBtn.setAttribute('aria-expanded', 'true');
+  }
+}
+
+function initHeaderEvents() {
+  const mobileNav = document.getElementById('mobile-nav');
+  const toggleBtn = document.getElementById('mobile-menu-toggle');
+  const closeBtn = document.getElementById('mobile-nav-close');
+
+  // Open mobile nav
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', openMobileNav);
+  }
+
+  // Close on close button
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeMobileNav);
+  }
+
+  // Close on overlay click
   if (mobileNav) {
     mobileNav.addEventListener('click', (e) => {
       if (e.target === mobileNav) {
-        mobileNav.classList.remove('open');
+        closeMobileNav();
       }
     });
   }
+
+  // Close on nav link click
+  document.querySelectorAll('[data-mobile-link]').forEach(link => {
+    link.addEventListener('click', () => {
+      closeMobileNav();
+    });
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeMobileNav();
+    }
+  });
 }
+

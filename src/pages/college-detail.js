@@ -88,7 +88,7 @@ export async function renderCollegeDetail(params) {
       <div class="container">
         <!-- College Header -->
         <div class="college-detail-header">
-          <div style="display:flex;align-items:start;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+          <div class="detail-header-inner">
             <div>
               <h1>${college.name}</h1>
               <p>${college.city}, Uttar Pradesh</p>
@@ -107,7 +107,7 @@ export async function renderCollegeDetail(params) {
                 </span>
               </div>
             </div>
-            <div style="display:flex;gap:0.5rem;">
+            <div class="detail-header-actions">
               <button class="btn ${bookmarked ? 'btn-primary' : 'btn-secondary'}" style="background:rgba(255,255,255,0.15);border-color:rgba(255,255,255,0.3);color:white;" 
                       onclick="window.__detailBookmark__('${collegeId}', this)" id="detail-bookmark-btn">
                 <i data-lucide="${bookmarked ? 'bookmark-check' : 'bookmark'}" style="width:16px;height:16px;"></i>

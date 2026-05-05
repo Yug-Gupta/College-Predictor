@@ -136,11 +136,11 @@ export async function renderResults() {
         <div class="results-meta">
           <div class="results-count" id="results-count">Showing ${results.length} results</div>
           <div class="results-actions">
-            <div class="search-bar" style="width:240px;">
+            <div class="search-bar" style="max-width:240px;width:100%;">
               <i data-lucide="search" class="search-icon"></i>
               <input type="text" placeholder="Search colleges..." id="results-search" />
             </div>
-            <select class="form-select" id="results-sort" style="width:180px; padding:0.5rem 0.75rem;">
+            <select class="form-select" id="results-sort" style="max-width:180px;width:100%; padding:0.5rem 0.75rem;">
               <option value="chance">Sort: Best Chance</option>
               <option value="closing_rank">Sort: Closing Rank</option>
               <option value="college_name">Sort: College Name</option>
@@ -159,7 +159,12 @@ export async function renderResults() {
         <div class="results-layout">
           <!-- Filter Sidebar -->
           <aside class="results-sidebar">
-            <div class="filter-panel">
+            <button class="btn btn-secondary btn-sm w-full show-mobile" id="filter-toggle-btn" style="margin-bottom:0.75rem;justify-content:center;">
+              <i data-lucide="sliders-horizontal" style="width:16px;height:16px;"></i>
+              Filters
+              <i data-lucide="chevron-down" style="width:14px;height:14px;"></i>
+            </button>
+            <div class="filter-panel" id="filter-panel-content">
               <h3>
                 <i data-lucide="sliders-horizontal" style="width:16px;height:16px;"></i>
                 Filters
@@ -307,7 +312,7 @@ function renderResultCards(results) {
               ${r.chanceLabel}
             </span>
           </div>
-          <div class="confidence-meter" style="width:140px;">
+          <div class="confidence-meter" style="max-width:140px;width:100%;">
             <div class="confidence-bar">
               <div class="confidence-fill ${r.chance} progress-animate" style="width:${r.confidence}%;"></div>
             </div>
@@ -323,6 +328,26 @@ export function initResultsEvents() {
   // Cleanup previous subscriptions
   if (unsubBookmarks) { unsubBookmarks(); unsubBookmarks = null; }
   if (unsubCompare) { unsubCompare(); unsubCompare = null; }
+
+  // Mobile filter toggle
+  const filterToggle = document.getElementById('filter-toggle-btn');
+  const filterPanel = document.getElementById('filter-panel-content');
+  if (filterToggle && filterPanel) {
+    // Start collapsed on mobile
+    if (window.innerWidth <= 768) {
+      filterPanel.style.display = 'none';
+    }
+    filterToggle.addEventListener('click', () => {
+      const isHidden = filterPanel.style.display === 'none';
+      filterPanel.style.display = isHidden ? '' : 'none';
+      filterToggle.querySelector('[data-lucide="chevron-down"], [data-lucide="chevron-up"]');
+      const icon = filterToggle.querySelectorAll('i')[1];
+      if (icon) {
+        icon.setAttribute('data-lucide', isHidden ? 'chevron-up' : 'chevron-down');
+        if (window.lucide) window.lucide.createIcons({ nodes: [icon] });
+      }
+    });
+  }
 
   // Search
   const searchInput = document.getElementById('results-search');

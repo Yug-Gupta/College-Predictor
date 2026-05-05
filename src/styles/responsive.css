@@ -1,0 +1,469 @@
+/* ============================================
+   RESPONSIVE.CSS — Production-Level Mobile & Tablet
+   Breakpoints: 1024px, 768px, 480px, 360px
+   ============================================ */
+
+/* ===== GLOBAL OVERFLOW PREVENTION ===== */
+html, body {
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+  min-width: 0;
+  min-height: 0;
+}
+
+img, video, canvas, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== TOUCH INTERACTION ===== */
+@media (pointer: coarse) {
+  .btn, .nav-link, .mobile-nav-link, .filter-check,
+  .tab, .accordion-trigger, .theme-option,
+  .pill-nav button, .footer-social-link {
+    min-height: 44px;
+  }
+
+  .filter-check input[type="checkbox"],
+  .filter-check input[type="radio"] {
+    width: 20px;
+    height: 20px;
+  }
+
+  .form-input, .form-select, .search-bar input {
+    min-height: 48px;
+    font-size: 16px; /* prevents iOS auto-zoom */
+  }
+
+  /* Disable hover-lift on touch — prevents jank */
+  .college-card:hover,
+  .hover-lift:hover {
+    transform: none !important;
+  }
+}
+
+/* ===== TABLET — 1024px ===== */
+@media (max-width: 1024px) {
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-sidebar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+
+  .detail-sidebar .card {
+    margin-bottom: 0;
+  }
+
+  .compare-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  .results-actions {
+    flex-wrap: wrap;
+  }
+
+  .stats-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ===== SMALL TABLET / MOBILE — 768px ===== */
+@media (max-width: 768px) {
+
+  /* --- Base --- */
+  html { font-size: 15.5px; }
+  .container { padding: 0 1rem; }
+  .section { padding: 2.5rem 0; }
+  .section-sm { padding: 1.75rem 0; }
+
+  /* --- Header --- */
+  .header-nav { display: none; }
+  .mobile-menu-btn { display: flex; }
+  .mobile-nav { display: block; }
+  .header-logo { font-size: 1rem; }
+  .header-logo .logo-icon { width: 28px; height: 28px; font-size: 0.875rem; }
+  .header-inner { padding: 0.625rem 0; }
+  .theme-switcher-btn span.hide-mobile { display: none; }
+  .theme-switcher-btn { padding: 0.375rem 0.5rem; }
+
+  /* --- Grids → single column --- */
+  .grid-2, .grid-3, .grid-4, .grid-auto {
+    grid-template-columns: 1fr;
+  }
+
+  /* --- Hero --- */
+  .hero-section { padding: 2.5rem 0; }
+  .hero-section::before, .hero-section::after { display: none; }
+  .hero-content h1 { font-size: clamp(1.75rem, 6vw, 2.5rem); line-height: 1.2; }
+  .hero-content p { font-size: 0.9375rem; margin-bottom: 1.5rem; }
+  .hero-badge { font-size: 0.6875rem; padding: 0.3rem 0.75rem; margin-bottom: 1rem; }
+  .hero-actions { flex-direction: column; align-items: center; gap: 0.75rem; }
+  .hero-actions .btn { width: 100%; max-width: 320px; justify-content: center; }
+
+  /* --- Stats bar (home) --- */
+  .stats-bar {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -1.5rem;
+    padding: 1rem;
+    gap: 0.75rem;
+    border-radius: var(--radius-lg);
+  }
+  .stats-bar .stat-number { font-size: 1.25rem; }
+  .stats-bar .stat-text { font-size: 0.6875rem; }
+
+  /* --- Feature cards: horizontal icon+text --- */
+  .features-section { padding: 3rem 0; }
+  .feature-card {
+    padding: 1.5rem;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .feature-card .feature-icon { margin: 0; width: 48px; height: 48px; flex-shrink: 0; }
+  .feature-card .feature-icon svg { width: 24px; height: 24px; }
+
+  /* --- Steps / How it works --- */
+  .steps-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .how-it-works-section { padding: 2.5rem 0; margin: 0 0.5rem; border-radius: var(--radius-lg); }
+
+  /* --- Quick predict --- */
+  .quick-predict-form { grid-template-columns: 1fr; }
+  .quick-predict { padding: 1.5rem; }
+
+  /* --- Predictor form page --- */
+  .predictor-page { padding: 1.5rem 0 3rem; }
+  .predictor-card-header { padding: 1.25rem 1rem; }
+  .predictor-card-header h2 { font-size: clamp(1.1rem, 4vw, 1.5rem); }
+  .predictor-form { padding: 1rem; }
+  .form-grid-2, .form-grid-3 { grid-template-columns: 1fr; gap: 1rem; }
+  .form-actions { flex-direction: column; }
+  .form-actions .btn-primary { max-width: 100%; width: 100%; }
+  .form-actions .btn-ghost { width: 100%; }
+
+  /* ===== RESULTS PAGE (CRITICAL) ===== */
+  .results-page { padding: 1.25rem 0 3rem; }
+
+  /* Data disclaimer banner */
+  .card-flat[style*="display:flex"] {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 0.5rem !important;
+    padding: 0.875rem 1rem !important;
+  }
+
+  /* Stat cards: 2x2 grid instead of 1-col */
+  .grid.grid-4.gap-md {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.625rem !important;
+  }
+
+  .stat-card { padding: 0.875rem; }
+  .stat-value { font-size: 1.375rem; }
+  .stat-label { font-size: 0.6875rem; }
+
+  /* Results layout → single column */
+  .results-layout { grid-template-columns: 1fr; gap: 1rem; }
+  .results-sidebar { position: static; max-height: none; overflow-y: visible; }
+  .filter-panel { padding: 1rem; }
+
+  /* Results controls bar */
+  .results-meta { flex-direction: column; align-items: stretch; gap: 0.75rem; }
+  .results-actions { 
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 0.5rem;
+  }
+  .results-actions .search-bar { 
+    max-width: none !important;
+    width: 100% !important;
+    flex-basis: 100%;
+  }
+  .results-actions .form-select { 
+    max-width: none !important;
+    width: 100% !important;
+    flex-basis: 100%;
+  }
+  .results-actions .btn {
+    flex: 1;
+    min-width: 0;
+    justify-content: center;
+  }
+  .results-summary-tags { gap: 0.375rem; }
+  .results-summary-tags .tag { font-size: 0.6875rem; padding: 0.2rem 0.5rem; }
+
+  /* College cards */
+  .college-card { padding: 1rem; }
+  .college-card-top { flex-direction: column; gap: 0.5rem; }
+  .college-card-actions { align-self: flex-end; margin-top: -0.25rem; }
+  .college-card-info h3 { font-size: 0.9375rem; line-height: 1.35; }
+  .college-card-ranks { gap: 1rem; padding: 0.625rem; flex-wrap: wrap; }
+  .rank-value { font-size: 1rem; }
+  .college-card-bottom { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+  .confidence-meter { width: 100% !important; }
+
+  /* ===== COLLEGE DETAIL PAGE ===== */
+  .college-detail-page { padding: 1.25rem 0 3rem; }
+  .college-detail-header { padding: 1.5rem 1rem; border-radius: var(--radius-lg); }
+  .college-detail-header h1 { font-size: clamp(1.15rem, 5vw, 1.75rem); }
+  .college-detail-meta { gap: 0.5rem; }
+  .college-detail-meta .meta-item { font-size: 0.75rem; padding: 0.25rem 0.625rem; }
+  .detail-grid { grid-template-columns: 1fr; }
+  .detail-sidebar { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+  .detail-sidebar .card { margin-bottom: 0; }
+
+  /* Detail header: stack title + buttons vertically */
+  .detail-header-inner {
+    flex-direction: column;
+  }
+  .detail-header-actions {
+    align-self: flex-start;
+  }
+
+  /* ===== DATA TABLES — CRITICAL FIX ===== */
+  .data-table { font-size: 0.75rem; }
+  .data-table thead th { 
+    padding: 0.5rem 0.375rem; 
+    font-size: 0.625rem; 
+    white-space: nowrap; 
+  }
+  .data-table tbody td { 
+    padding: 0.5rem 0.375rem; 
+    font-size: 0.75rem; 
+    word-break: break-word;
+  }
+  /* Ensure table wrapper scrolls, not the page */
+  div[style*="overflow-x:auto"] {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  /* ===== COMPARE PAGE ===== */
+  .compare-page { padding: 1.25rem 0 3rem; }
+  .compare-grid { grid-template-columns: 1fr; }
+  .compare-add-slot { min-height: 200px; }
+  .compare-row { padding: 0.625rem 0.875rem; font-size: 0.8125rem; }
+  .compare-row .label { min-width: 80px; flex-shrink: 0; }
+  .compare-row .value { word-break: break-word; }
+  .compare-card-header h3 { font-size: 0.9rem; }
+
+  /* ===== SAVED PAGE ===== */
+  .saved-page { padding: 1.25rem 0 3rem; }
+  .saved-grid { grid-template-columns: 1fr; }
+
+  /* ===== GUIDE PAGE ===== */
+  .guide-page { padding: 1.5rem 0 3rem; }
+  .guide-hero { padding: 1.5rem 1rem; border-radius: var(--radius-lg); margin-bottom: 1.5rem; }
+  .guide-content { grid-template-columns: 1fr; gap: 1.25rem; }
+
+  /* Guide nav → horizontal scroll pills */
+  .guide-nav {
+    position: static;
+    display: flex;
+    overflow-x: auto;
+    gap: 0.25rem;
+    padding: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .guide-nav::-webkit-scrollbar { display: none; }
+  .guide-nav a { white-space: nowrap; flex-shrink: 0; font-size: 0.75rem; padding: 0.5rem 0.75rem; }
+  .guide-section { margin-bottom: 2rem; }
+
+  /* Guide table overflow wrapper */
+  .guide-section div[style*="overflow-x:auto"] {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    padding: 0 0.5rem;
+  }
+
+  /* ===== ABOUT PAGE ===== */
+  .about-page { padding: 1.5rem 0 3rem; }
+  .about-hero { padding: 1.5rem 1rem; border-radius: var(--radius-lg); margin-bottom: 1.5rem; }
+
+  /* ===== FOOTER ===== */
+  .site-footer { padding: 2.5rem 0 1.5rem; margin-top: 2.5rem; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  .footer-brand { grid-column: 1 / -1; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .footer-attribution { width: 100%; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.05); }
+
+  /* ===== TOAST / MODAL ===== */
+  #toast-container { left: 1rem; right: 1rem; bottom: 1rem; }
+  .toast { max-width: 100%; width: 100%; }
+  #modal-overlay { padding: 1rem; align-items: flex-end; }
+  .modal { max-width: 100%; max-height: 80vh; border-radius: var(--radius-xl) var(--radius-xl) 0 0; }
+
+  /* ===== SCROLLABLE CONTAINERS ===== */
+  .tabs, .pill-nav {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    flex-wrap: nowrap;
+  }
+  .tabs::-webkit-scrollbar, .pill-nav::-webkit-scrollbar { display: none; }
+  .pill-nav button { flex-shrink: 0; }
+
+  /* ===== MISC ===== */
+  .chance-badge { font-size: 0.6875rem; padding: 0.25rem 0.5rem; }
+  .empty-state { padding: 2.5rem 1.5rem; }
+  .empty-state-icon { width: 60px; height: 60px; }
+  .card.surface-elevated { padding: 2rem 1.25rem !important; }
+  #page-content { min-height: calc(100vh - 120px); }
+  .hide-mobile { display: none !important; }
+
+  /* Section headers */
+  .section-header h2 { font-size: 1.375rem; }
+  .section-header p { font-size: 0.8125rem; }
+  .section-header { margin-bottom: 2rem; }
+}
+
+/* ===== MOBILE — 480px ===== */
+@media (max-width: 480px) {
+  html { font-size: 15px; }
+  .container { padding: 0 0.75rem; }
+
+  /* Hero */
+  .hero-section { padding: 2rem 0; }
+  .hero-content h1 { font-size: 1.625rem; }
+  .hero-content p { font-size: 0.875rem; }
+  .hero-actions .btn { padding: 0.75rem 1.5rem; font-size: 0.9375rem; }
+
+  /* Stats */
+  .stats-bar { padding: 0.875rem; gap: 0.5rem; margin-top: -1rem; }
+  .stats-bar .stat-number { font-size: 1.125rem; }
+
+  /* College cards — stack ranks vertically */
+  .college-card-ranks { gap: 0.75rem; flex-direction: column; }
+  .rank-item { flex-direction: row; align-items: center; justify-content: space-between; }
+
+  /* Footer single column */
+  .site-footer { padding: 2rem 0 1.25rem; margin-top: 2rem; }
+  .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .footer-brand { grid-column: auto; }
+  .footer-col h4 { margin-bottom: 0.75rem; }
+  .footer-attribution { flex-wrap: wrap; gap: 0.375rem; }
+  .footer-divider { margin: 1.5rem 0 1rem; }
+
+  /* Header compact */
+  .header-logo .year-badge { font-size: 0.5625rem; padding: 0.0625rem 0.25rem; }
+
+  /* Predictor */
+  .predictor-card-header h2 { font-size: 1.05rem; }
+  .predictor-card-header p { font-size: 0.8125rem; }
+
+  /* Detail page */
+  .college-detail-header { padding: 1.25rem 0.875rem; }
+  .college-detail-header h1 { font-size: 1.1rem; line-height: 1.3; }
+  .college-detail-meta .meta-item { font-size: 0.6875rem; padding: 0.2rem 0.5rem; }
+
+  /* Compare */
+  .compare-row { padding: 0.5rem 0.75rem; font-size: 0.75rem; }
+  .compare-card-header { padding: 1rem; }
+  .compare-card-header h3 { font-size: 0.875rem; }
+
+  /* Accordion */
+  .accordion-trigger { padding: 0.875rem 0; font-size: 0.875rem; }
+
+  /* Guide nav */
+  .guide-nav { padding: 0.375rem; border-radius: var(--radius-md); }
+  .guide-nav a { font-size: 0.6875rem; padding: 0.375rem 0.625rem; }
+
+  /* Data tables — extra compact */
+  .data-table thead th { padding: 0.375rem 0.25rem; font-size: 0.5625rem; }
+  .data-table tbody td { padding: 0.375rem 0.25rem; font-size: 0.6875rem; }
+
+  /* Stat cards tighter */
+  .stat-card { padding: 0.75rem; }
+  .stat-value { font-size: 1.25rem; }
+  .stat-label { font-size: 0.625rem; }
+
+  /* Best fit tags */
+  .card-flat .tag { font-size: 0.6875rem; padding: 0.25rem 0.5rem; }
+}
+
+/* ===== SMALL MOBILE — 360px ===== */
+@media (max-width: 360px) {
+  html { font-size: 14px; }
+  .container { padding: 0 0.625rem; }
+
+  .hero-content h1 { font-size: 1.4rem; }
+
+  .stats-bar { gap: 0.375rem; padding: 0.75rem; }
+  .stats-bar .stat-number { font-size: 1rem; }
+
+  .college-card { padding: 0.75rem; }
+  .college-card-info h3 { font-size: 0.85rem; }
+
+  .filter-panel { padding: 0.75rem; }
+  .btn-lg { padding: 0.75rem 1.25rem; font-size: 0.875rem; }
+
+  /* Prevent grid-4 stat cards from being too tight */
+  .grid.grid-4.gap-md {
+    gap: 0.375rem !important;
+  }
+
+  /* Saved grid fix — prevent overflow on small screens */
+  .saved-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ===== LANDSCAPE MOBILE ===== */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero-section { padding: 1.5rem 0; }
+  .hero-content h1 { font-size: 1.5rem; }
+  .hero-content p { margin-bottom: 1rem; }
+  .hero-badge { margin-bottom: 0.75rem; }
+  .hero-actions { flex-direction: row; gap: 0.5rem; }
+  .hero-actions .btn { max-width: none; width: auto; }
+  .stats-bar { grid-template-columns: repeat(4, 1fr); margin-top: -1rem; }
+  .mobile-nav-content { width: min(400px, 70vw); }
+  #page-content { min-height: calc(100vh - 80px); }
+}
+
+/* ===== SAFE AREA (notch devices) ===== */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .site-header {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+  .site-footer {
+    padding-bottom: calc(1.5rem + env(safe-area-inset-bottom));
+  }
+  #toast-container {
+    bottom: calc(1rem + env(safe-area-inset-bottom));
+  }
+  .mobile-nav-content {
+    padding-right: calc(1.5rem + env(safe-area-inset-right));
+  }
+}
+
+/* ===== PRINT ===== */
+@media print {
+  .site-header, .site-footer, .mobile-nav,
+  #toast-container, #modal-overlay,
+  .theme-switcher, .mobile-menu-btn {
+    display: none !important;
+  }
+  body { background: white; color: black; }
+  .college-card { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
+}
