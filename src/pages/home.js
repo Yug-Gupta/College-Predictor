@@ -71,43 +71,55 @@ export async function renderHome() {
             <div class="feature-icon">
               <i data-lucide="target"></i>
             </div>
-            <h3>Official Data-Driven</h3>
-            <p>Based on ${TOTAL_RECORDS.toLocaleString()} official UPTAC ${DATA_YEAR} OR-CR records from admissions.nic.in. Every prediction is backed by real cutoff data.</p>
+            <div class="feature-text">
+              <h3>Official Data-Driven</h3>
+              <p>Based on ${TOTAL_RECORDS.toLocaleString()} official UPTAC ${DATA_YEAR} OR-CR records from admissions.nic.in. Every prediction is backed by real cutoff data.</p>
+            </div>
           </div>
           <div class="card feature-card hover-lift">
             <div class="feature-icon">
               <i data-lucide="columns-2"></i>
             </div>
-            <h3>Compare Colleges</h3>
-            <p>Side-by-side comparison of up to 3 colleges. Compare cutoffs, packages, NAAC grades, and more.</p>
+            <div class="feature-text">
+              <h3>Compare Colleges</h3>
+              <p>Side-by-side comparison of up to 3 colleges. Compare cutoffs, packages, NAAC grades, and more.</p>
+            </div>
           </div>
           <div class="card feature-card hover-lift">
             <div class="feature-icon">
               <i data-lucide="download"></i>
             </div>
-            <h3>Save & Export</h3>
-            <p>Bookmark your top choices, export results as CSV, and access your saved list anytime.</p>
+            <div class="feature-text">
+              <h3>Save & Export</h3>
+              <p>Bookmark your top choices, export results as CSV, and access your saved list anytime.</p>
+            </div>
           </div>
           <div class="card feature-card hover-lift">
             <div class="feature-icon">
               <i data-lucide="filter"></i>
             </div>
-            <h3>Smart Filters</h3>
-            <p>Filter by chance level, college type, region, branch, and sort by multiple criteria for precise results.</p>
+            <div class="feature-text">
+              <h3>Smart Filters</h3>
+              <p>Filter by chance level, college type, region, branch, and sort by multiple criteria for precise results.</p>
+            </div>
           </div>
           <div class="card feature-card hover-lift">
             <div class="feature-icon">
               <i data-lucide="palette"></i>
             </div>
-            <h3>5 Beautiful Themes</h3>
-            <p>Switch between Indigo Pro, Midnight Dark, Ocean Breeze, Sunset Warm, and Forest Green themes.</p>
+            <div class="feature-text">
+              <h3>5 Beautiful Themes</h3>
+              <p>Switch between Indigo Pro, Midnight Dark, Ocean Breeze, Sunset Warm, and Forest Green themes.</p>
+            </div>
           </div>
           <div class="card feature-card hover-lift">
             <div class="feature-icon">
               <i data-lucide="smartphone"></i>
             </div>
-            <h3>Mobile Friendly</h3>
-            <p>Fully responsive design that works flawlessly on phone, tablet, and desktop screens.</p>
+            <div class="feature-text">
+              <h3>Mobile Friendly</h3>
+              <p>Fully responsive design that works flawlessly on phone, tablet, and desktop screens.</p>
+            </div>
           </div>
         </div>
       </div>
