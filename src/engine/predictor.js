@@ -9,6 +9,39 @@ import { getCollege } from '../data/colleges.js';
 import { getBranchName } from '../data/branches.js';
 import { normalizeSearchText, isFuzzyMatch } from '../utils/search.js';
 
+// ============================================
+// GIRL CATEGORY MAPPING
+// ============================================
+// In official UPTAC data, female-specific seats use separate category codes
+// (e.g., BC → BC(Girl), OPEN → OPEN(GIRL)). This map enables the engine
+// to automatically resolve the correct category when seat gender is "Female".
+
+const GIRL_CATEGORY_MAP = {
+  'OPEN':      'OPEN(GIRL)',
+  'BC':        'BC(Girl)',
+  'SC':        'SC(Girl)',
+  'ST':        'ST(Girl)',
+  'EWS(OPEN)': 'EWS(GL)',
+};
+
+/**
+ * Resolve female category variants for a given base category.
+ * Returns an array of categories to match against when seat gender is Female.
+ * @param {string} baseCategory - The user-selected category (e.g., 'BC')
+ * @returns {string[]} Array of categories to search (girl variant + base)
+ */
+function resolveFemaleCategoryVariants(baseCategory) {
+  const girlVariant = GIRL_CATEGORY_MAP[baseCategory];
+  // If there's a known girl variant, search both the variant and the original
+  // (some rare records may use the base category with Female Seats)
+  if (girlVariant) {
+    return [girlVariant, baseCategory];
+  }
+  // If the category is already a girl-specific one (user selected from full list),
+  // just return it as-is
+  return [baseCategory];
+}
+
 /**
  * Classify admission chance based on user rank vs official opening/closing rank.
  * Anchored on CLOSING RANK as the primary cutoff threshold.
@@ -100,6 +133,13 @@ function adjust2026(rank) {
 /**
  * Run prediction for given user inputs.
  * Returns results with full transparency: reason, data year, source.
+ * 
+ * Female Seat Logic:
+ * - When seatGender is "Female Seats", the engine searches for:
+ *   1. Girl-specific category variants (e.g., BC(Girl)) with "Female Seats"
+ *   2. Gender-neutral seats ("Both Male and Female Seats") with the base category
+ * - This ensures female users see ALL seats available to them.
+ * 
  * @param {object} input
  * @returns {Array<object>}
  */
@@ -121,13 +161,36 @@ export function predict(input) {
   // Normalize round format
   const roundValue = round.startsWith('Round') ? round : `Round ${round}`;
 
+  // Build category + gender matching logic
+  const isFemaleSearch = seatGender === 'Female Seats';
+  const femaleCategoryVariants = isFemaleSearch
+    ? resolveFemaleCategoryVariants(category)
+    : null;
+
   // Filter cutoff entries by user criteria
   let matches = cutoffs.filter(c => {
     if (c.round !== roundValue) return false;
-    if (c.category !== category) return false;
     if (c.quota !== quota) return false;
     if (branch !== 'all' && c.branchCode !== branch) return false;
-    if (c.seatGender !== seatGender) return false;
+
+    if (isFemaleSearch) {
+      // Female search: match girl-variant categories with "Female Seats"
+      // OR match the base category with gender-neutral seats
+      const isGirlCategory = femaleCategoryVariants.includes(c.category);
+      const isFemaleGenderSeat = c.seatGender === 'Female Seats';
+      const isNeutralSeat = c.seatGender === 'Both Male and Female Seats';
+      const isBaseCategory = c.category === category;
+
+      // Include: (girl category + female seats) OR (base category + neutral seats)
+      if (!(isGirlCategory && isFemaleGenderSeat) && !(isBaseCategory && isNeutralSeat)) {
+        return false;
+      }
+    } else {
+      // Standard search: exact category + gender match
+      if (c.category !== category) return false;
+      if (c.seatGender !== seatGender) return false;
+    }
+
     return true;
   });
 
