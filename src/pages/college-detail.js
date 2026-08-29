@@ -87,7 +87,7 @@ export async function renderCollegeDetail(params) {
     <div class="college-detail-page">
       <div class="container">
         <!-- College Header -->
-        <div class="college-detail-header">
+        <div class="college-detail-header reveal">
           <div class="detail-header-inner">
             <div>
               <h1>${college.name}</h1>
@@ -101,19 +101,19 @@ export async function renderCollegeDetail(params) {
                   <i data-lucide="map-pin" style="width:14px;height:14px;"></i>
                   ${college.region}
                 </span>
-                <span class="meta-item" style="color:var(--accent-primary);">
+                <span class="meta-item" style="color:var(--header-accent);">
                   <i data-lucide="database" style="width:14px;height:14px;"></i>
                   📅 ${DATA_YEAR} Official Data
                 </span>
               </div>
             </div>
             <div class="detail-header-actions">
-              <button class="btn ${bookmarked ? 'btn-primary' : 'btn-secondary'}" style="background:rgba(255,255,255,0.15);border-color:rgba(255,255,255,0.3);color:white;" 
+              <button class="btn ${bookmarked ? 'btn-primary' : 'btn-secondary'}" style="background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.25);color:white;"
                       onclick="window.__detailBookmark__('${collegeId}', this)" id="detail-bookmark-btn">
                 <i data-lucide="${bookmarked ? 'bookmark-check' : 'bookmark'}" style="width:16px;height:16px;"></i>
                 ${bookmarked ? 'Saved' : 'Save'}
               </button>
-              <button class="btn ${compared ? 'btn-primary' : 'btn-secondary'}" style="background:rgba(255,255,255,0.15);border-color:rgba(255,255,255,0.3);color:white;"
+              <button class="btn ${compared ? 'btn-primary' : 'btn-secondary'}" style="background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.25);color:white;"
                       onclick="window.__detailCompare__('${collegeId}', this)" id="detail-compare-btn">
                 <i data-lucide="${compared ? 'check-square' : 'columns-2'}" style="width:16px;height:16px;"></i>
                 ${compared ? 'Comparing' : 'Compare'}
@@ -126,7 +126,7 @@ export async function renderCollegeDetail(params) {
           <!-- Main Content -->
           <div>
             <!-- Cutoff Table -->
-            <div class="card mb-3" style="padding:0;overflow:hidden;">
+            <div class="card mb-3 reveal" style="padding:0;overflow:hidden;">
               <div style="padding:1.25rem 1.5rem;border-bottom:1px solid var(--border-light);">
                 <h3 style="font-size:1rem;">Branch-wise Cutoffs (Round 1 — Home State)</h3>
                 <p class="text-sm text-muted mt-1">
@@ -155,7 +155,7 @@ export async function renderCollegeDetail(params) {
 
             <!-- Round-wise Trend -->
             ${roundComparison.length > 0 ? `
-            <div class="card mb-3" style="padding:0;overflow:hidden;">
+            <div class="card mb-3 reveal" style="padding:0;overflow:hidden;">
               <div style="padding:1.25rem 1.5rem;border-bottom:1px solid var(--border-light);">
                 <h3 style="font-size:1rem;">Round-wise Cutoff Trend (OPEN — Home State)</h3>
                 <p class="text-sm text-muted mt-1">How closing ranks changed across counselling rounds in ${DATA_YEAR}</p>
@@ -187,7 +187,7 @@ export async function renderCollegeDetail(params) {
 
             <!-- Cutoff Trend Chart -->
             ${chartBranches.length > 0 ? `
-            <div class="card mb-3" style="padding:1.5rem;">
+            <div class="card mb-3 reveal" style="padding:1.5rem;">
               <h3 style="font-size:1rem;margin-bottom:1rem;">Cutoff Trends Across Rounds (OPEN — Home State)</h3>
               <div style="position:relative;height:300px;">
                 <canvas id="cutoff-trend-chart"></canvas>
@@ -199,7 +199,7 @@ export async function renderCollegeDetail(params) {
           <!-- Sidebar -->
           <div class="detail-sidebar">
             <!-- Quick Stats -->
-            <div class="card" style="padding:1.5rem;margin-bottom:1.5rem;">
+            <div class="card reveal" style="padding:1.5rem;margin-bottom:1.5rem;">
               <h3 style="font-size:0.9375rem;margin-bottom:1rem;">Quick Info</h3>
               <div style="display:flex;flex-direction:column;gap:0.75rem;">
                 <div style="display:flex;justify-content:space-between;font-size:0.8125rem;">
@@ -230,7 +230,7 @@ export async function renderCollegeDetail(params) {
             </div>
 
             <!-- Branches Offered -->
-            <div class="card" style="padding:1.5rem;margin-bottom:1.5rem;">
+            <div class="card reveal" style="padding:1.5rem;margin-bottom:1.5rem;">
               <h3 style="font-size:0.9375rem;margin-bottom:0.75rem;">Branches Offered</h3>
               <div style="display:flex;flex-wrap:wrap;gap:0.375rem;">
                 ${college.branches.map(b => `<span class="tag">${b}</span>`).join('')}
@@ -238,7 +238,7 @@ export async function renderCollegeDetail(params) {
             </div>
 
             <!-- Data Source -->
-            <div class="card" style="padding:1.5rem;margin-bottom:1.5rem;background:var(--bg-secondary);">
+            <div class="card reveal" style="padding:1.5rem;margin-bottom:1.5rem;background:var(--bg-secondary);">
               <h3 style="font-size:0.9375rem;margin-bottom:0.75rem;">📊 Data Source</h3>
               <p style="font-size:0.75rem;color:var(--text-muted);line-height:1.5;">
                 All cutoff data is from the <strong>Official UPTAC ${DATA_YEAR} B.Tech Counselling OR-CR report</strong> published on admissions.nic.in by Dr. A.P.J. Abdul Kalam Technical University.
@@ -288,7 +288,6 @@ export function initCollegeDetailEvents(params) {
   window.__detailBookmark__ = (id, btn) => {
     const added = toggleCollegeBookmark(id);
     showToast(added ? 'College saved!' : 'Bookmark removed', added ? 'success' : 'info');
-    // State change triggers subscriber below, but we also update immediately
     updateBookmarkButton();
     renderHeader();
     if (window.lucide) window.lucide.createIcons();
@@ -303,7 +302,6 @@ export function initCollegeDetailEvents(params) {
     }
     const nowCompared = isInCompare(id);
     showToast(nowCompared ? 'Added to compare!' : 'Removed from compare', nowCompared ? 'success' : 'info');
-    // State change triggers subscriber below, but we also update immediately
     updateCompareButton();
     renderHeader();
     if (window.lucide) window.lucide.createIcons();

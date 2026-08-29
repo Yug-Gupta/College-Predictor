@@ -55,22 +55,22 @@ export async function renderPredictor() {
   return `
     <div class="predictor-page">
       <div class="container-sm">
-        <div class="predictor-card">
+        <div class="predictor-card reveal">
           <div class="predictor-card-header">
-            <h2>🎯 UPTAC B.Tech College Predictor</h2>
+            <h2>UPTAC B.Tech College Predictor</h2>
             <p>Enter your details below to find the best colleges for 2026 counselling</p>
           </div>
-          
+
           <form class="predictor-form" id="predictor-form">
             <!-- Section: Basic Info -->
             <div class="form-grid-2">
               <div class="form-section-title">Your Rank & Category</div>
-              
+
               <div class="form-group" id="fg-rank">
                 <label class="form-label">JEE Main CRL Rank <span class="required">*</span></label>
-                <input type="number" class="form-input" id="input-rank" name="rank" 
-                       placeholder="Enter your JEE Main rank" 
-                       value="${savedForm?.rank || ''}" 
+                <input type="number" class="form-input" id="input-rank" name="rank"
+                       placeholder="Enter your JEE Main rank"
+                       value="${savedForm?.rank || ''}"
                        min="1" max="1500000" required />
                 <span class="form-error" id="err-rank">Please enter a valid rank (1 - 15,00,000)</span>
               </div>
@@ -148,13 +148,13 @@ export async function renderPredictor() {
         </div>
 
         <!-- Data Source Info -->
-        <div class="card-flat" style="margin-top:1.5rem; padding:1.5rem;">
+        <div class="card-flat reveal" style="margin-top:1.5rem; padding:1.5rem;">
           <h3 style="font-size:1rem; margin-bottom:0.75rem; display:flex; align-items:center; gap:0.5rem;">
             <i data-lucide="info" style="width:18px;height:18px;color:var(--accent-primary);"></i>
             How Predictions Work
           </h3>
           <div style="font-size:0.8125rem; color:var(--text-secondary); line-height:1.7;">
-            <p>Predictions based on <strong>official UPTAC ${DATA_YEAR} counselling data</strong> from admissions.nic.in. 
+            <p>Predictions based on <strong>official UPTAC ${DATA_YEAR} counselling data</strong> from admissions.nic.in.
             Results are estimates for 2026 UPTAC counselling with a ±5% adjustment for yearly variation.</p>
             <div style="display:flex; gap:1rem; margin-top:0.75rem; flex-wrap:wrap;">
               <span class="chance-badge chance-safe"><span class="chance-dot safe"></span> Safe — High admission probability</span>

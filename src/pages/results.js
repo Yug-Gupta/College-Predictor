@@ -59,7 +59,7 @@ export async function renderResults() {
       <div class="container">
 
         <!-- Official Data Disclaimer Banner -->
-        <div class="card-flat mb-3" style="padding:0.875rem 1.25rem; background:linear-gradient(135deg, rgba(59,130,246,0.08), rgba(139,92,246,0.06)); border-color:var(--accent-primary); display:flex; align-items:center; gap:0.75rem; flex-wrap:wrap;">
+        <div class="card-flat mb-3 reveal" style="padding:0.875rem 1.25rem; background:var(--accent-light); border-color:var(--accent-primary); display:flex; align-items:center; gap:0.75rem; flex-wrap:wrap;">
           <span style="font-size:1.25rem;">📊</span>
           <div style="flex:1; min-width:200px;">
             <span style="font-weight:600; font-size:0.8125rem;">Based on official UPTAC ${DATA_YEAR} data</span>
@@ -73,7 +73,7 @@ export async function renderResults() {
         </div>
 
         <!-- Results Header -->
-        <div class="results-header">
+        <div class="results-header reveal">
           <h1>College Predictions</h1>
           <div class="results-summary-tags">
             <span class="tag"><i data-lucide="hash" style="width:12px;height:12px;"></i> Rank: ${formatRank(formData.rank)}</span>
@@ -85,7 +85,7 @@ export async function renderResults() {
         </div>
 
         <!-- Stats Summary -->
-        <div class="grid grid-4 gap-md mb-3 stagger-in">
+        <div class="grid grid-4 gap-md mb-3 stagger-in reveal">
           <div class="card stat-card">
             <div class="stat-value">${stats.total}</div>
             <div class="stat-label">Total Matches</div>
@@ -106,7 +106,7 @@ export async function renderResults() {
 
         ${bestFit.length > 0 ? `
         <!-- Best Fit Recommendations -->
-        <div class="card-flat mb-3" style="padding:1.25rem; border-color:var(--chance-safe); background: var(--chance-safe-bg);">
+        <div class="card-flat mb-3 reveal" style="padding:1.25rem; border-color:var(--chance-safe); background: var(--chance-safe-bg);">
           <h3 style="font-size:0.9375rem; margin-bottom:0.75rem; display:flex; align-items:center; gap:0.5rem; color: var(--chance-safe);">
             <i data-lucide="star" style="width:18px;height:18px;"></i>
             Best Fit Colleges for You
@@ -122,7 +122,7 @@ export async function renderResults() {
         ` : ''}
 
         <!-- Counselling Tips -->
-        <div class="card-flat mb-3" style="padding:1.25rem;">
+        <div class="card-flat mb-3 reveal" style="padding:1.25rem;">
           <h3 style="font-size:0.9375rem; margin-bottom:0.75rem; display:flex; align-items:center; gap:0.5rem;">
             <i data-lucide="lightbulb" style="width:18px;height:18px; color:var(--chance-moderate);"></i>
             Counselling Tips for Your Rank
@@ -133,7 +133,7 @@ export async function renderResults() {
         </div>
 
         <!-- Controls Bar -->
-        <div class="results-meta">
+        <div class="results-meta reveal">
           <div class="results-count" id="results-count">Showing ${results.length} results</div>
           <div class="results-actions">
             <div class="search-bar" style="max-width:240px;width:100%;">
@@ -255,12 +255,12 @@ function renderResultCards(results) {
             <span class="college-branch">${r.branchName}</span>
           </div>
           <div class="college-card-actions">
-            <button data-tooltip="${compared ? 'Remove from compare' : 'Add to compare'}" 
+            <button data-tooltip="${compared ? 'Remove from compare' : 'Add to compare'}"
                     data-compare-id="${r.collegeId}"
                     onclick="window.__toggleCompare__('${r.collegeId}', this)">
               <i data-lucide="${compared ? 'check-square' : 'columns-2'}" style="width:16px;height:16px;"></i>
             </button>
-            <button class="${bookmarked ? 'bookmarked' : ''}" 
+            <button class="${bookmarked ? 'bookmarked' : ''}"
                     data-tooltip="${bookmarked ? 'Remove bookmark' : 'Bookmark'}"
                     data-bookmark-key="${bookmarkKey}"
                     onclick="window.__toggleBookmark__('${bookmarkKey}', this)">
@@ -409,7 +409,7 @@ export function initResultsEvents() {
   window.__toggleBookmark__ = (key, btnEl) => {
     const added = toggleBookmark(key);
     showToast(added ? 'College bookmarked!' : 'Bookmark removed', added ? 'success' : 'info');
-    
+
     // Determine current state (check both exact key and college-level)
     const collegeId = key.split('__')[0];
     const nowSaved = isBookmarked(key) || isCollegeBookmarked(collegeId);
@@ -455,7 +455,6 @@ export function initResultsEvents() {
 
   // Subscribe to external state changes to re-sync all buttons on the grid
   unsubBookmarks = subscribe('bookmarks', () => {
-    // Re-render the grid to ensure all bookmark buttons are in sync
     applyFilters();
     renderHeader();
     if (window.lucide) window.lucide.createIcons();

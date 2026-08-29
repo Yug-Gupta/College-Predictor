@@ -8,7 +8,7 @@ import { getCompareList, getBookmarks } from '../state.js';
 
 export function renderHeader() {
   const route = getCurrentRoute();
-  
+
   const navItems = [
     { path: '/', label: 'Home', icon: 'home' },
     { path: '/predict', label: 'Predict', icon: 'search' },
@@ -51,14 +51,14 @@ export function renderHeader() {
 
   const header = document.getElementById('site-header');
   header.innerHTML = `
-    <div class="site-header">
+    <div class="site-header" id="site-header-inner">
       <div class="container">
         <div class="header-inner">
           <a href="#/" data-link class="header-logo">
             <div class="logo-icon">🎓</div>
             <span>UPTAC Predictor <span class="year-badge">2026</span></span>
           </a>
-          
+
           <nav class="header-nav">
             ${navLinksHtml}
           </nav>
@@ -118,17 +118,14 @@ function initHeaderEvents() {
   const toggleBtn = document.getElementById('mobile-menu-toggle');
   const closeBtn = document.getElementById('mobile-nav-close');
 
-  // Open mobile nav
   if (toggleBtn) {
     toggleBtn.addEventListener('click', openMobileNav);
   }
 
-  // Close on close button
   if (closeBtn) {
     closeBtn.addEventListener('click', closeMobileNav);
   }
 
-  // Close on overlay click
   if (mobileNav) {
     mobileNav.addEventListener('click', (e) => {
       if (e.target === mobileNav) {
@@ -137,14 +134,12 @@ function initHeaderEvents() {
     });
   }
 
-  // Close on nav link click
   document.querySelectorAll('[data-mobile-link]').forEach(link => {
     link.addEventListener('click', () => {
       closeMobileNav();
     });
   });
 
-  // Close on Escape key
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       closeMobileNav();
@@ -152,3 +147,16 @@ function initHeaderEvents() {
   });
 }
 
+/**
+ * Update header scroll state
+ * Adds shadow when scrolled
+ */
+export function updateHeaderScroll() {
+  const headerInner = document.getElementById('site-header-inner');
+  if (!headerInner) return;
+  if (window.scrollY > 10) {
+    headerInner.classList.add('scrolled');
+  } else {
+    headerInner.classList.remove('scrolled');
+  }
+}

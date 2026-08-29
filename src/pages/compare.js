@@ -23,7 +23,7 @@ function renderCompareContent(compareIds) {
         <div class="container-sm">
           <h1 style="margin-bottom:0.5rem;">Compare Colleges</h1>
           <p class="text-muted mb-3">Add colleges from the results page to compare them side by side.</p>
-          <div class="empty-state" style="padding:4rem 2rem;">
+          <div class="empty-state">
             <div class="empty-state-icon"><i data-lucide="columns-2" style="width:64px;height:64px;"></i></div>
             <h3>No Colleges to Compare</h3>
             <p>Use the compare button on college cards in your prediction results to add colleges here.</p>
@@ -73,7 +73,7 @@ function renderCompareContent(compareIds) {
 
         <div class="compare-grid">
           ${collegesData.map(c => `
-            <div class="compare-card">
+            <div class="compare-card reveal">
               <div class="compare-card-header">
                 <span class="badge ${c.type === 'Government' ? 'badge-govt' : 'badge-pvt'}" style="margin-bottom:0.5rem;">${c.type}</span>
                 <h3>${c.shortName}</h3>
@@ -145,14 +145,12 @@ export function initCompareEvents() {
   window.__clearCompare__ = () => {
     clearCompare();
     showToast('Compare list cleared', 'info');
-    // Instant UI update — no page reload needed
     refreshCompareUI();
   };
 
   window.__removeCompare__ = (id) => {
     toggleCompare(id);
     showToast('College removed from compare', 'info');
-    // Instant UI update — no page reload needed
     refreshCompareUI();
   };
 

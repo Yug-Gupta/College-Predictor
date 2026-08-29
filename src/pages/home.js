@@ -15,7 +15,7 @@ export async function renderHome() {
     <!-- Hero Section -->
     <section class="hero-section">
       <div class="container">
-        <div class="hero-content">
+        <div class="hero-content reveal">
           <div class="hero-badge">
             <span class="dot"></span>
             Based on Official UPTAC ${DATA_YEAR} Data · Estimated for 2026
@@ -38,22 +38,22 @@ export async function renderHome() {
 
     <!-- Stats Bar -->
     <div class="container">
-      <div class="stats-bar stagger-in">
+      <div class="stats-bar stagger-in reveal">
         <div class="stat-item">
-          <div class="stat-number">${totalColleges}+</div>
+          <div class="stat-number count-up">${totalColleges}+</div>
           <div class="stat-text">AKTU Colleges</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">${totalBranches}+</div>
+          <div class="stat-number count-up">${totalBranches}+</div>
           <div class="stat-text">B.Tech Branches</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">${totalDataPoints.toLocaleString()}</div>
-            <div class="stat-text">Official Records</div>
+          <div class="stat-number count-up">${totalDataPoints.toLocaleString()}</div>
+          <div class="stat-text">Official Records</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">${DATA_YEAR}→26</div>
-            <div class="stat-text">Counselling Ready</div>
+          <div class="stat-number count-up">${DATA_YEAR}→26</div>
+          <div class="stat-text">Counselling Ready</div>
         </div>
       </div>
     </div>
@@ -61,12 +61,12 @@ export async function renderHome() {
     <!-- Features Section -->
     <section class="features-section">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header reveal">
           <span class="overline">Why Choose Us</span>
           <h2>Everything You Need for UPTAC Counselling</h2>
           <p>Built by students, for students. Get accurate predictions and make informed decisions about your engineering career.</p>
         </div>
-        <div class="grid grid-3 gap-lg stagger-in">
+        <div class="grid grid-3 gap-lg stagger-in reveal">
           <div class="card feature-card hover-lift">
             <div class="feature-icon">
               <i data-lucide="target"></i>
@@ -130,12 +130,12 @@ export async function renderHome() {
       <div class="container">
         <div class="how-it-works-section">
           <div class="container-sm">
-            <div class="section-header">
+            <div class="section-header reveal">
               <span class="overline">Simple Process</span>
               <h2>How It Works</h2>
               <p>Get your college predictions in 3 easy steps</p>
             </div>
-            <div class="steps-grid stagger-in">
+            <div class="steps-grid stagger-in reveal">
               <div class="step-card">
                 <div class="step-number">1</div>
                 <h3>Enter Your Details</h3>
@@ -160,9 +160,9 @@ export async function renderHome() {
     <!-- CTA Section -->
     <section class="section-sm">
       <div class="container-sm">
-        <div class="card surface-elevated" style="text-align:center; padding:3rem 2rem;">
+        <div class="card surface-elevated reveal" style="text-align:center; padding:3rem 2rem;">
           <h2 style="margin-bottom:0.75rem;">Ready to Find Your College?</h2>
-          <p style="margin-bottom:1.5rem; max-width:480px; margin-left:auto; margin-right:auto;">Enter your rank and get instant predictions for 2026 UPTAC counselling. It's free, fast, and accurate.</p>
+          <p style="margin-bottom:1.5rem; max-width:480px; margin-left:auto; margin-right:auto; color:var(--text-secondary);">Enter your rank and get instant predictions for 2026 UPTAC counselling. It's free, fast, and accurate.</p>
           <a href="#/predict" data-link class="btn btn-primary btn-lg btn-ripple">
             <i data-lucide="arrow-right" style="width:20px;height:20px;"></i>
             Start Predicting Now

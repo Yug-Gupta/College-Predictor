@@ -4,8 +4,9 @@
 
 import { registerRoute, initRouter } from './router.js';
 import { initState, setTheme, getTheme, subscribe } from './state.js';
-import { renderHeader } from './components/header.js';
+import { renderHeader, updateHeaderScroll } from './components/header.js';
 import { renderFooter } from './components/footer.js';
+import { initScrollEffects } from './utils/scroll.js';
 
 // --- Page Imports ---
 import { renderHome } from './pages/home.js';
@@ -106,14 +107,13 @@ window.addEventListener('routechange', (e) => {
     if (window.lucide) {
       window.lucide.createIcons();
     }
+
+    // Re-init scroll effects
+    initScrollEffects();
   }, 50);
 });
 
 // --- Global State → Header Reactivity ---
-// Re-render header badges whenever bookmarks or compareList change globally.
-// This ensures the header is always in sync regardless of which page triggers
-// the state change. Individual pages also call renderHeader() for immediate
-// feedback, but these subscriptions act as a universal safety net.
 subscribe('bookmarks', () => {
   renderHeader();
   if (window.lucide) setTimeout(() => window.lucide.createIcons(), 10);
@@ -133,6 +133,11 @@ window.__setTheme__ = (themeId) => {
   }
 };
 
+// --- Scroll Handler ---
+window.addEventListener('scroll', () => {
+  updateHeaderScroll();
+}, { passive: true });
+
 // --- Start Router ---
 initRouter();
 
@@ -141,6 +146,10 @@ window.addEventListener('load', () => {
   if (window.lucide) {
     window.lucide.createIcons();
   }
+  // Initial scroll state
+  updateHeaderScroll();
+  // Init scroll effects
+  initScrollEffects();
 });
 
 // Log startup

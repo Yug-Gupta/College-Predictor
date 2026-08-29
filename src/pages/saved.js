@@ -42,7 +42,7 @@ export async function renderSaved() {
 
         <div id="saved-grid-container">
           ${bookmarks.length > 0 ? `
-            <div class="saved-grid stagger-in" id="saved-grid">
+            <div class="saved-grid stagger-in reveal" id="saved-grid">
               ${bookmarkCards}
             </div>
           ` : `
@@ -61,11 +61,11 @@ export async function renderSaved() {
         <div id="recent-section-container">
           ${recentlyViewed.length > 0 ? `
             <div style="margin-top:3rem;">
-              <h2 style="font-size:1.25rem;margin-bottom:1rem;">
+              <h2 style="font-size:1.25rem;margin-bottom:1rem;" class="reveal">
                 <i data-lucide="clock" style="width:20px;height:20px;display:inline;vertical-align:text-bottom;margin-right:0.375rem;"></i>
                 Recently Viewed
               </h2>
-              <div class="grid grid-3 gap-md stagger-in">
+              <div class="grid grid-3 gap-md stagger-in reveal">
                 ${recentCards}
               </div>
             </div>
@@ -124,7 +124,7 @@ function renderRecentCards(recentlyViewed) {
     const college = getCollege(collegeId);
     if (!college) return '';
     return `
-      <a href="#/college?id=${collegeId}" data-link class="card hover-lift" style="padding:1rem;display:flex;align-items:center;gap:0.75rem;text-decoration:none;">
+      <a href="#/college?id=${collegeId}" data-link class="card hover-lift reveal" style="padding:1rem;display:flex;align-items:center;gap:0.75rem;text-decoration:none;">
         <div style="width:36px;height:36px;border-radius:var(--radius-md);background:var(--accent-light);color:var(--accent-primary);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
           <i data-lucide="building-2" style="width:18px;height:18px;"></i>
         </div>
@@ -171,7 +171,7 @@ function refreshSavedUI() {
   if (gridContainer) {
     if (bookmarks.length > 0) {
       gridContainer.innerHTML = `
-        <div class="saved-grid stagger-in" id="saved-grid">
+        <div class="saved-grid stagger-in reveal" id="saved-grid">
           ${renderBookmarkCards(bookmarks)}
         </div>
       `;
@@ -204,14 +204,12 @@ export function initSavedEvents() {
   window.__removeSavedBookmark__ = (key) => {
     toggleBookmark(key);
     showToast('Bookmark removed', 'info');
-    // Instant UI update — no page reload needed
     refreshSavedUI();
   };
 
   window.__clearAllSaved__ = () => {
     clearBookmarks();
     showToast('All bookmarks cleared', 'info');
-    // Instant UI update
     refreshSavedUI();
   };
 

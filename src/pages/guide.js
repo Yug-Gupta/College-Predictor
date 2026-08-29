@@ -7,14 +7,14 @@ export async function renderGuide() {
     <div class="guide-page">
       <div class="container">
         <!-- Guide Hero -->
-        <div class="guide-hero">
+        <div class="guide-hero reveal">
           <h1>UPTAC Counselling Guide 2026</h1>
           <p>Everything you need to know about the UPTAC/AKTU B.Tech counselling process</p>
         </div>
 
         <div class="guide-content">
           <!-- Side Navigation -->
-          <nav class="guide-nav">
+          <nav class="guide-nav reveal">
             <a href="javascript:void(0)" onclick="document.getElementById('sec-overview').scrollIntoView({behavior:'smooth'})" class="active">Overview</a>
             <a href="javascript:void(0)" onclick="document.getElementById('sec-process').scrollIntoView({behavior:'smooth'})">Process</a>
             <a href="javascript:void(0)" onclick="document.getElementById('sec-documents').scrollIntoView({behavior:'smooth'})">Documents</a>
@@ -27,7 +27,7 @@ export async function renderGuide() {
           <!-- Guide Sections -->
           <div>
             <!-- Overview -->
-            <div class="guide-section" id="sec-overview">
+            <div class="guide-section reveal" id="sec-overview">
               <h2>What is UPTAC Counselling?</h2>
               <p>UPTAC (Uttar Pradesh Technical Admission Counselling) is the centralized counselling process conducted by Dr. A.P.J. Abdul Kalam Technical University (AKTU) for admission to B.Tech, B.Arch, B.Pharm, and other technical programs in Uttar Pradesh.</p>
               <p>Admissions are primarily based on <strong>JEE Main</strong> ranks. The counselling is conducted online through the official NIC portal at <a href="https://uptac.admissions.nic.in" target="_blank" rel="noopener" style="color:var(--accent-primary);text-decoration:underline;">uptac.admissions.nic.in</a>.</p>
@@ -43,7 +43,7 @@ export async function renderGuide() {
             </div>
 
             <!-- Process -->
-            <div class="guide-section" id="sec-process">
+            <div class="guide-section reveal" id="sec-process">
               <h2>Counselling Process</h2>
               <p>The UPTAC counselling follows a structured step-by-step process:</p>
 
@@ -72,7 +72,7 @@ export async function renderGuide() {
             </div>
 
             <!-- Documents -->
-            <div class="guide-section" id="sec-documents">
+            <div class="guide-section reveal" id="sec-documents">
               <h2>Required Documents</h2>
               <p>Keep the following documents ready for counselling and college reporting:</p>
               <div style="display:flex;flex-direction:column;gap:0.25rem;margin-top:1rem;">
@@ -100,7 +100,7 @@ export async function renderGuide() {
             </div>
 
             <!-- Categories -->
-            <div class="guide-section" id="sec-categories">
+            <div class="guide-section reveal" id="sec-categories">
               <h2>Category & Reservation</h2>
               <p>Seat reservation in UPTAC follows Uttar Pradesh state reservation policy:</p>
               <div style="overflow-x:auto;margin-top:1rem;">
@@ -125,7 +125,7 @@ export async function renderGuide() {
             </div>
 
             <!-- Tips -->
-            <div class="guide-section" id="sec-tips">
+            <div class="guide-section reveal" id="sec-tips">
               <h2>Counselling Tips & Strategy</h2>
               <div style="display:flex;flex-direction:column;gap:1rem;margin-top:1rem;">
                 <div class="card" style="padding:1.25rem;">
@@ -152,7 +152,7 @@ export async function renderGuide() {
             </div>
 
             <!-- Important Dates -->
-            <div class="guide-section" id="sec-dates">
+            <div class="guide-section reveal" id="sec-dates">
               <h2>Important Dates (2026)</h2>
               <div class="card" style="padding:1.5rem;border-left:3px solid var(--chance-moderate);">
                 <p style="color:var(--chance-moderate);font-weight:600;margin-bottom:0.5rem;">⚠️ Dates To Be Announced</p>
@@ -169,7 +169,7 @@ export async function renderGuide() {
             </div>
 
             <!-- FAQ -->
-            <div class="guide-section" id="sec-faq">
+            <div class="guide-section reveal" id="sec-faq">
               <h2>Frequently Asked Questions</h2>
               <div style="margin-top:1rem;">
                 ${[
