@@ -35,7 +35,7 @@ export async function renderResults() {
             <div class="empty-state-icon"><i data-lucide="search-x" style="width:80px;height:80px;"></i></div>
             <h3>No Predictions Yet</h3>
             <p>Enter your rank and preferences to get college predictions for 2026 UPTAC counselling.</p>
-            <a href="#/predict" data-link class="btn btn-primary btn-lg">
+            <a href="#/predict" data-link class="btn btn-primary btn-lg btn-3d btn-shine">
               <i data-lucide="search" style="width:18px;height:18px;"></i>
               Start Predicting
             </a>
@@ -146,7 +146,7 @@ export async function renderResults() {
               <option value="college_name">Sort: College Name</option>
               <option value="opening_rank">Sort: Opening Rank</option>
             </select>
-            <button class="btn btn-secondary btn-sm" id="export-btn">
+            <button class="btn btn-secondary btn-sm btn-3d" id="export-btn">
               <i data-lucide="download" style="width:14px;height:14px;"></i> Export CSV
             </button>
             <a href="#/predict" data-link class="btn btn-ghost btn-sm">

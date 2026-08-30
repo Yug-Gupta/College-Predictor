@@ -72,16 +72,31 @@ function setupParallax() {
 
     const content = hero.querySelector('.hero-content');
     if (content) {
-      content.style.transform = `translate(${moveX * 4}px, ${moveY * 4}px)`;
-      content.style.transition = 'transform 0.3s ease-out';
+      content.style.transform = `translate3d(${moveX * 6}px, ${moveY * 6}px, 0)`;
+      content.style.transition = 'transform 0.35s ease-out';
+    }
+
+    // Parallax floating orbs for extra depth (via CSS vars so keyframes compose)
+    const orbs = hero.querySelectorAll('.hero-orb');
+    if (orbs.length) {
+      orbs.forEach((orb, i) => {
+        const depth = [12, -16, 22][i % 3] || 12;
+        orb.style.setProperty('--par-x', `${(moveX * depth).toFixed(1)}px`);
+        orb.style.setProperty('--par-y', `${(moveY * depth).toFixed(1)}px`);
+      });
     }
   };
 
   const leaveHandler = () => {
     const content = hero.querySelector('.hero-content');
     if (content) {
-      content.style.transform = 'translate(0, 0)';
+      content.style.transform = 'translate3d(0, 0, 0)';
     }
+    const orbs = hero.querySelectorAll('.hero-orb');
+    orbs.forEach(orb => {
+      orb.style.setProperty('--par-x', '0px');
+      orb.style.setProperty('--par-y', '0px');
+    });
   };
 
   hero.addEventListener('mousemove', moveHandler, { passive: true });

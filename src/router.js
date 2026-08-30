@@ -53,7 +53,15 @@ async function resolveRoute() {
   // Show loader
   pageContent.innerHTML = `
     <div class="page-loader" id="page-loader">
-      <div class="loader-spinner"></div>
+      <div class="loader-3d" aria-hidden="true">
+        <div class="face"></div>
+        <div class="face"></div>
+        <div class="face"></div>
+        <div class="face"></div>
+        <div class="face"></div>
+        <div class="face"></div>
+      </div>
+      <div class="loader-cube-shadow"></div>
       <p>Loading...</p>
     </div>
   `;

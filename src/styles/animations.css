@@ -20,8 +20,7 @@
 
 /* --- Staggered Children --- */
 .stagger-in > * {
-  opacity: 0;
-  animation: staggerItem 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation: staggerItem 0.55s cubic-bezier(0.4, 0, 0.2, 1) backwards;
 }
 
 .stagger-in > *:nth-child(1) { animation-delay: 0.05s; }
@@ -38,24 +37,26 @@
 @keyframes staggerItem {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: perspective(900px) translateY(24px) rotateX(7deg);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: perspective(900px) translateY(0) rotateX(0deg);
   }
 }
 
-/* --- Scroll Reveal --- */
+/* --- Scroll Reveal (3D depth) --- */
 .reveal {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: perspective(1100px) translateY(30px) rotateX(8deg);
+  transform-origin: center top;
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
 }
 
 .reveal.revealed {
   opacity: 1;
-  transform: translateY(0);
+  transform: perspective(1100px) translateY(0) rotateX(0deg);
 }
 
 .reveal-delay-1 { transition-delay: 0.1s; }

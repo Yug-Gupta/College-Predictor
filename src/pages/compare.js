@@ -27,7 +27,7 @@ function renderCompareContent(compareIds) {
             <div class="empty-state-icon"><i data-lucide="columns-2" style="width:64px;height:64px;"></i></div>
             <h3>No Colleges to Compare</h3>
             <p>Use the compare button on college cards in your prediction results to add colleges here.</p>
-            <a href="#/predict" data-link class="btn btn-primary mt-2">
+            <a href="#/predict" data-link class="btn btn-primary mt-2 btn-3d">
               <i data-lucide="search" style="width:18px;height:18px;"></i>
               Predict Colleges First
             </a>

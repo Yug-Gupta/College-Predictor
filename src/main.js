@@ -7,6 +7,7 @@ import { initState, setTheme, getTheme, subscribe } from './state.js';
 import { renderHeader, updateHeaderScroll } from './components/header.js';
 import { renderFooter } from './components/footer.js';
 import { initScrollEffects } from './utils/scroll.js';
+import { initEffects, updateHero3DTheme } from './utils/effects3d.js';
 
 // --- Page Imports ---
 import { renderHome } from './pages/home.js';
@@ -110,6 +111,9 @@ window.addEventListener('routechange', (e) => {
 
     // Re-init scroll effects
     initScrollEffects();
+
+    // Re-init global 3D effects (hero scene, tilt, cursor, chrome)
+    initEffects();
   }, 50);
 });
 
@@ -128,10 +132,16 @@ subscribe('compareList', () => {
 window.__setTheme__ = (themeId) => {
   setTheme(themeId);
   renderHeader();
+  updateHero3DTheme(themeId);
   if (window.lucide) {
     setTimeout(() => window.lucide.createIcons(), 50);
   }
 };
+
+// Keep the 3D hero scene in sync with external theme changes
+subscribe('theme', (themeId) => {
+  updateHero3DTheme(themeId);
+});
 
 // --- Scroll Handler ---
 window.addEventListener('scroll', () => {
@@ -150,6 +160,9 @@ window.addEventListener('load', () => {
   updateHeaderScroll();
   // Init scroll effects
   initScrollEffects();
+  // Init global 3D effects
+  initEffects();
+  updateHero3DTheme(getTheme());
 });
 
 // Log startup

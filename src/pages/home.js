@@ -12,8 +12,36 @@ export async function renderHome() {
   const totalDataPoints = cutoffs.length;
 
   return `
+    <div class="home-page">
+    <!-- Aurora background -->
+    <div class="aurora" aria-hidden="true">
+      <div class="aurora-blob blob-1"></div>
+      <div class="aurora-blob blob-2"></div>
+      <div class="aurora-blob blob-3"></div>
+    </div>
+
     <!-- Hero Section -->
     <section class="hero-section">
+      <div id="hero-canvas" aria-hidden="true"></div>
+      <div class="hero-orb orb-1" aria-hidden="true"></div>
+      <div class="hero-orb orb-2" aria-hidden="true"></div>
+      <div class="hero-orb orb-3" aria-hidden="true"></div>
+      <div class="hero-shape shape-a" aria-hidden="true">
+        <div class="cube-face"></div>
+        <div class="cube-face"></div>
+        <div class="cube-face"></div>
+        <div class="cube-face"></div>
+        <div class="cube-face"></div>
+        <div class="cube-face"></div>
+      </div>
+      <div class="hero-shape shape-b" aria-hidden="true">
+        <div class="cube-face"></div>
+        <div class="cube-face"></div>
+        <div class="cube-face"></div>
+        <div class="cube-face"></div>
+        <div class="cube-face"></div>
+        <div class="cube-face"></div>
+      </div>
       <div class="container">
         <div class="hero-content reveal">
           <div class="hero-badge">
@@ -23,11 +51,11 @@ export async function renderHome() {
           <h1>Find Your Best <span class="highlight">Engineering College</span></h1>
           <p>Predict your admission chances at ${totalColleges}+ AKTU colleges using ${totalDataPoints.toLocaleString()} official data points from UPTAC ${DATA_YEAR} counselling. Free and transparent.</p>
           <div class="hero-actions">
-            <a href="#/predict" data-link class="btn btn-primary btn-lg btn-ripple">
+            <a href="#/predict" data-link class="btn btn-primary btn-lg btn-3d btn-shine">
               <i data-lucide="search" style="width:20px;height:20px;"></i>
               Predict My College
             </a>
-            <a href="#/guide" data-link class="btn btn-outline btn-lg">
+            <a href="#/guide" data-link class="btn btn-outline btn-lg btn-3d">
               <i data-lucide="book-open" style="width:20px;height:20px;"></i>
               Counselling Guide
             </a>
@@ -67,7 +95,7 @@ export async function renderHome() {
           <p>Built by students, for students. Get accurate predictions and make informed decisions about your engineering career.</p>
         </div>
         <div class="grid grid-3 gap-lg stagger-in reveal">
-          <div class="card feature-card hover-lift">
+          <div class="card feature-card hover-lift" data-tilt data-tilt-spot>
             <div class="feature-icon">
               <i data-lucide="target"></i>
             </div>
@@ -76,7 +104,7 @@ export async function renderHome() {
               <p>Based on ${TOTAL_RECORDS.toLocaleString()} official UPTAC ${DATA_YEAR} OR-CR records from admissions.nic.in. Every prediction is backed by real cutoff data.</p>
             </div>
           </div>
-          <div class="card feature-card hover-lift">
+          <div class="card feature-card hover-lift" data-tilt data-tilt-spot>
             <div class="feature-icon">
               <i data-lucide="columns-2"></i>
             </div>
@@ -85,7 +113,7 @@ export async function renderHome() {
               <p>Side-by-side comparison of up to 3 colleges. Compare cutoffs, packages, NAAC grades, and more.</p>
             </div>
           </div>
-          <div class="card feature-card hover-lift">
+          <div class="card feature-card hover-lift" data-tilt data-tilt-spot>
             <div class="feature-icon">
               <i data-lucide="download"></i>
             </div>
@@ -94,7 +122,7 @@ export async function renderHome() {
               <p>Bookmark your top choices, export results as CSV, and access your saved list anytime.</p>
             </div>
           </div>
-          <div class="card feature-card hover-lift">
+          <div class="card feature-card hover-lift" data-tilt data-tilt-spot>
             <div class="feature-icon">
               <i data-lucide="filter"></i>
             </div>
@@ -103,7 +131,7 @@ export async function renderHome() {
               <p>Filter by chance level, college type, region, branch, and sort by multiple criteria for precise results.</p>
             </div>
           </div>
-          <div class="card feature-card hover-lift">
+          <div class="card feature-card hover-lift" data-tilt data-tilt-spot>
             <div class="feature-icon">
               <i data-lucide="palette"></i>
             </div>
@@ -112,7 +140,7 @@ export async function renderHome() {
               <p>Switch between Indigo Pro, Midnight Dark, Ocean Breeze, Sunset Warm, and Forest Green themes.</p>
             </div>
           </div>
-          <div class="card feature-card hover-lift">
+          <div class="card feature-card hover-lift" data-tilt data-tilt-spot>
             <div class="feature-icon">
               <i data-lucide="smartphone"></i>
             </div>
@@ -136,17 +164,17 @@ export async function renderHome() {
               <p>Get your college predictions in 3 easy steps</p>
             </div>
             <div class="steps-grid stagger-in reveal">
-              <div class="step-card">
+              <div class="step-card" data-tilt>
                 <div class="step-number">1</div>
                 <h3>Enter Your Details</h3>
                 <p>Fill in your JEE Main rank, category, quota, and branch preferences.</p>
               </div>
-              <div class="step-card">
+              <div class="step-card" data-tilt>
                 <div class="step-number">2</div>
                 <h3>Get Predictions</h3>
                 <p>Our engine matches your rank against 2025 cutoff data to predict 2026 chances.</p>
               </div>
-              <div class="step-card">
+              <div class="step-card" data-tilt>
                 <div class="step-number">3</div>
                 <h3>Make Decisions</h3>
                 <p>Compare, save, and export your top college picks. Make informed choices for counselling.</p>
@@ -160,15 +188,16 @@ export async function renderHome() {
     <!-- CTA Section -->
     <section class="section-sm">
       <div class="container-sm">
-        <div class="card surface-elevated reveal" style="text-align:center; padding:3rem 2rem;">
+        <div class="card surface-elevated gradient-card reveal" data-tilt-spot style="text-align:center; padding:3rem 2rem;">
           <h2 style="margin-bottom:0.75rem;">Ready to Find Your College?</h2>
           <p style="margin-bottom:1.5rem; max-width:480px; margin-left:auto; margin-right:auto; color:var(--text-secondary);">Enter your rank and get instant predictions for 2026 UPTAC counselling. It's free, fast, and accurate.</p>
-          <a href="#/predict" data-link class="btn btn-primary btn-lg btn-ripple">
+          <a href="#/predict" data-link class="btn btn-primary btn-lg btn-3d btn-shine">
             <i data-lucide="arrow-right" style="width:20px;height:20px;"></i>
             Start Predicting Now
           </a>
         </div>
       </div>
     </section>
+    </div>
   `;
 }

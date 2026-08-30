@@ -108,12 +108,12 @@ export async function renderCollegeDetail(params) {
               </div>
             </div>
             <div class="detail-header-actions">
-              <button class="btn ${bookmarked ? 'btn-primary' : 'btn-secondary'}" style="background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.25);color:white;"
+              <button class="btn ${bookmarked ? 'btn-primary' : 'btn-secondary'} btn-3d" style="background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.25);color:white;"
                       onclick="window.__detailBookmark__('${collegeId}', this)" id="detail-bookmark-btn">
                 <i data-lucide="${bookmarked ? 'bookmark-check' : 'bookmark'}" style="width:16px;height:16px;"></i>
                 ${bookmarked ? 'Saved' : 'Save'}
               </button>
-              <button class="btn ${compared ? 'btn-primary' : 'btn-secondary'}" style="background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.25);color:white;"
+              <button class="btn ${compared ? 'btn-primary' : 'btn-secondary'} btn-3d" style="background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.25);color:white;"
                       onclick="window.__detailCompare__('${collegeId}', this)" id="detail-compare-btn">
                 <i data-lucide="${compared ? 'check-square' : 'columns-2'}" style="width:16px;height:16px;"></i>
                 ${compared ? 'Comparing' : 'Compare'}

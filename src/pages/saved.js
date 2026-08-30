@@ -50,7 +50,7 @@ export async function renderSaved() {
               <div class="empty-state-icon"><i data-lucide="bookmark" style="width:64px;height:64px;"></i></div>
               <h3>No Saved Colleges</h3>
               <p>Bookmark colleges from your prediction results to save them here for quick access.</p>
-              <a href="#/predict" data-link class="btn btn-primary mt-2">
+              <a href="#/predict" data-link class="btn btn-primary mt-2 btn-3d">
                 <i data-lucide="search" style="width:18px;height:18px;"></i>
                 Predict Colleges
               </a>

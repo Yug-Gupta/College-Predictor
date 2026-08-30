@@ -55,7 +55,7 @@ export async function renderPredictor() {
   return `
     <div class="predictor-page">
       <div class="container-sm">
-        <div class="predictor-card reveal">
+        <div class="predictor-card reveal" data-tilt-spot>
           <div class="predictor-card-header">
             <h2>UPTAC B.Tech College Predictor</h2>
             <p>Enter your details below to find the best colleges for 2026 counselling</p>
@@ -134,7 +134,7 @@ export async function renderPredictor() {
 
               <!-- Submit -->
               <div class="form-actions">
-                <button type="submit" class="btn btn-primary btn-lg btn-ripple" id="predict-btn">
+                <button type="submit" class="btn btn-primary btn-lg btn-3d btn-shine" id="predict-btn">
                   <i data-lucide="search" style="width:20px;height:20px;"></i>
                   Predict Colleges
                 </button>

@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="/src/styles/pages.css" />
     <link rel="stylesheet" href="/src/styles/utilities.css" />
     <link rel="stylesheet" href="/src/styles/animations.css" />
+    <link rel="stylesheet" href="/src/styles/3d-effects.css" />
     <link rel="stylesheet" href="/src/styles/responsive.css" />
 </head>
 <body>
@@ -37,7 +38,15 @@
         <header id="site-header"></header>
         <main id="page-content">
             <div class="page-loader" id="page-loader">
-                <div class="loader-spinner"></div>
+                <div class="loader-3d" aria-hidden="true">
+                    <div class="face"></div>
+                    <div class="face"></div>
+                    <div class="face"></div>
+                    <div class="face"></div>
+                    <div class="face"></div>
+                    <div class="face"></div>
+                </div>
+                <div class="loader-cube-shadow"></div>
                 <p>Loading...</p>
             </div>
         </main>
